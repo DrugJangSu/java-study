@@ -15,3 +15,8 @@ public class HelloWorld {
 jshell> System.out.print("Hello World");
 */
 
+// Challenge - Print out "Hello Tim"
+/*
+jshell> System.out.print("Hello Tim");
+Hello Tim
+ */
