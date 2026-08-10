@@ -9,4 +9,9 @@ public class HelloWorld {
 */
 ///// Section 3 : First Steps in Java Programming --------------
 //// Your First Java Program : Displaying "Hello World" and Basic Error Handling
+/* // on the terminal
+|  Welcome to JShell -- Version 17.0.20
+|  For an introduction type: /help intro
+jshell> System.out.print("Hello World");
+*/
 
