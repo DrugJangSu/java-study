@@ -8,3 +8,5 @@ public class HelloWorld {
 }
 */
 ///// Section 3 : First Steps in Java Programming --------------
+//// Your First Java Program : Displaying "Hello World" and Basic Error Handling
+
