@@ -58,8 +58,10 @@ jshell> System.out.print('Hello Tim'); // This also shows an error.
 // There are lots of different types of data that we can define for our variables- collectively these are known as data types.
 // Some data types are keywords in Java. In later chapters about Object Oriented features in Java - there is a lot of flexibility for creating our own data types. However for now we'll go through primitive data types which are built into the Java language.
 
+/// Declaration Statement
+// A declaration statement is used to define a variable by indiciating the data type, and the name, then optionally to set the variable to a specific value.
 /*
-jshell> int myFirstNumber = 5;
+jshell> int myFirstNumber = 5; <- this is the declaration statement.
 myFirstNumber ==> 5
 
 
