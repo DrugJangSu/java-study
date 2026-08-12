@@ -65,9 +65,15 @@ jshell> System.out.print('Hello Tim'); // This also shows an error.
 // An expression is a coding construct that evaluates to a single value.
 
 /*
-
 jshell> int myFirstNumber = 5; <- this is the declaration statement.
 myFirstNumber ==> 5
-
 */
 
+/// Variable Challenge 1
+// Look at creating a new System.out.print below the declaration for myFirstNumber, and to fgure out how to print the value of myFirstNumber variable.
+// My answer
+/* 
+jshell> int myFirstNumber = 5; System.out.print(myFirstNumber);
+myFirstNumber ==> 5
+5
+*/
