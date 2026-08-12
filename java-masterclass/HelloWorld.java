@@ -82,4 +82,23 @@ myFirstNumber ==> 5
 // basically if you use double quotes - it's a string literal- like the example below.
 // System.out.print("myFirstNumber") <- this will only print myFirstNumber, not the actual result that we wanted to have.
 // System.out.print(myFirstNumber) <- this will do.
+/*
+jshell> int myFirstNumber = 5;
+myFirstNumber ==> 5
+
+jshell> myFirstNumber = 10; <- this is allocation thus changing the value in which will have different results when we use the same output
+myFirstNumber ==> 10
+
+jshell> System.out.print(myFirstNumber);
+10
+
+/// Variable Challenge 2
+// Change the value of the existing variable from ten to one thousand, and print the new value out using the System.out.print method as we've done previously.
+// My answer;
+jshell> myFirstNumber = 1000;
+myFirstNumber ==> 1000
+jshell> System.out.print(myFirstNumber);
+// result
+1000
+*/
 
