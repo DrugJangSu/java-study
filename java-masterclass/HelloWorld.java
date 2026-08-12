@@ -53,3 +53,9 @@ jshell> System.out.print('Hello Tim'); // This also shows an error.
 /// Variables
 // Variables are a way to store information in the computer.
 // Variables that we define in a program, can be accessed by a name we give them, and the computer does the hard work of figuring out where they get stored in the computer's random access memory- or RAM.
+
+/// Data type
+// There are lots of different types of data that we can define for our variables- collectively these are known as data types.
+// Some data types are keywords in Java. In later chapters about Object Oriented features in Java - there is a lot of flexibility for creating our own data types. However for now we'll go through primitive data types which are built into the Java language.
+
+
