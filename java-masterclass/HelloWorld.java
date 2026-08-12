@@ -43,7 +43,7 @@ jshell> System.out.print('Hello Tim'); // This also shows an error.
 // And example would be /exit or /ex
 
 
-//// Introduction to Variables, Keywords and the Integer (int) Data Type
+//// Introduction to Variables, Keywords and the Integer (int) Data Type --------------------
 
 /// Keywords
 // A Keyword is any one of a number of reserved words, that have a predefined meaning in the Java language.
@@ -86,7 +86,7 @@ myFirstNumber ==> 5
 jshell> int myFirstNumber = 5;
 myFirstNumber ==> 5
 
-jshell> myFirstNumber = 10; <- this is allocation thus changing the value in which will have different results when we use the same output
+jshell> myFirstNumber = 10; <- this is changing the value in which will have different results when we use the same output
 myFirstNumber ==> 10
 
 jshell> System.out.print(myFirstNumber);
@@ -117,3 +117,15 @@ jshell>
 */
 // This J shell command lists all the Java statements you've executed in Jshell.
 
+/// Variable Declarations in Jshell
+// By declaring a variable again, we are effectively re-declaring a variable, and in normal Java programming that would not be allowed and would throw an error.
+// For now just follow along, knowing that re-declaring a variable for a second, or subsequent time is not allowed, and later in the course we'll see what happens.
+// Note that we can assign a value to a variable multiple times in Java, but it's the declaration (which includes the data type) that cannot normally be done a second time for the same variable.
+
+/// Operators
+// Java operators, or just operators, perform an operation (hence the term) on a variable or value.
+// Addition, Subtraction, Division, and Multiplication are four common ones that I feel sure you're familiar with, but there are lots more operators you will work with as we go through the course.
+
+//// Using Variables in Java Expressions : A Comprehensive Introduction ----------------------
+/// Starting out with Expressions
+// The expression is the code segmnent that is on the right side of the equals sign in an assignment or declaration statement.
