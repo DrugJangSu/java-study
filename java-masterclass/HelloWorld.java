@@ -60,11 +60,14 @@ jshell> System.out.print('Hello Tim'); // This also shows an error.
 
 /// Declaration Statement
 // A declaration statement is used to define a variable by indiciating the data type, and the name, then optionally to set the variable to a specific value.
+
+/// Expressions
+// An expression is a coding construct that evaluates to a single value.
+
 /*
+
 jshell> int myFirstNumber = 5; <- this is the declaration statement.
 myFirstNumber ==> 5
 
-
-
-
 */
+
