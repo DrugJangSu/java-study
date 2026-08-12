@@ -48,3 +48,5 @@ jshell> System.out.print('Hello Tim'); // This also shows an error.
 /// Keywords
 // A Keyword is any one of a number of reserved words, that have a predefined meaning in the Java language.
 // In Java syntax, all code is case-sensitive, and this includes keywords. As we'll soon see, an int- all in lowercase, is not the same as Int-with a capital I. Here an int (lowercase) is a keyword in Java.
+// Among Keywords - boolean, byte, char, double, float, int, long, short => are known as primitive data types.
+
