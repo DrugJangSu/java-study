@@ -74,6 +74,12 @@ myFirstNumber ==> 5
 // My answer
 /* 
 jshell> int myFirstNumber = 5; System.out.print(myFirstNumber);
+
+// result
 myFirstNumber ==> 5
 5
 */
+// basically if you use double quotes - it's a string literal- like the example below.
+// System.out.print("myFirstNumber") <- this will only print myFirstNumber, not the actual result that we wanted to have.
+// System.out.print(myFirstNumber) <- this will do.
+
