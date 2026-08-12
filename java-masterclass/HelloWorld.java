@@ -102,3 +102,18 @@ jshell> System.out.print(myFirstNumber);
 1000
 */
 
+// The Jshell list command (/list)
+/*
+jshell> /list
+
+   1 : int myFirstNumber = 5;
+   2 : myFirstNumber = 10;
+   3 : System.out.print(myFirstNumber);
+   4 : myFirstNumber = 1000;
+   5 : System.out.print(myFirstNumber);
+
+jshell> 
+
+*/
+// This J shell command lists all the Java statements you've executed in Jshell.
+
