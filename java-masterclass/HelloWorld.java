@@ -142,7 +142,42 @@ jshell> int mySecondNumber = 12; int myThirdNumber = 6;
 mySecondNumber ==> 12
 myThirdNumber ==> 6
 
+// If you use /var on JShell, it will show what variables are available for use
+
+// if you sum up
+int myTotal = myFirstNumber + mySecondNumber + myThirdNumber;
+myTotal ==> 53
+
+// changing the variable
+myThirdNumber = myFirstNumber * 2;
+myThirdNumber ==> 70
+int myTotal = myFirstNumber + mySecondNumber + myThirdNumber;
+myTotal ==> 117
 
 
+
+/// Challenge 
+// First create a new variable and call it myLastOne:
+- Its data type should be int.
+- It should be set to the value of 1000, minus (or less than) the value in the myTotal variable, which we've just taked about in our previous code segment.
+// Next, print out the value of the myLastOne variable on the line after you declare it.
+- Hint : We need to use another operator that we haven't used in code before, but if you think about this, it should be easy to figure out which operator you need to use.
+
+// My answer
+int myLastOne = 1000 - myTotal;
+myLastOne ==> 883
 
 */
+
+/// Java code is case sensitive
+// Java code is case sensitive. This includes not only keywords and language syntax, but variable names and data types as well.
+// myLastOne is not the same variable as MyLastOne with a capital M.
+// int in lowercase, is not the same as Int with the first letter capitalized, or INT all in uppercase etc.
+
+// Keywords need to be in lowercase.
+// Variables will always be exactly as you declare them, including capitalization.
+// Remember that case matters in Java code.
+// The /vars command in JShell can help identify any misspellings if there are any.
+
+//// Exploring Java Primitive Types : Integer Ranges and Wrapper Classes ------------------
+/// 
