@@ -127,5 +127,22 @@ jshell>
 // Addition, Subtraction, Division, and Multiplication are four common ones that I feel sure you're familiar with, but there are lots more operators you will work with as we go through the course.
 
 //// Using Variables in Java Expressions : A Comprehensive Introduction ----------------------
+/*
 /// Starting out with Expressions
 // The expression is the code segmnent that is on the right side of the equals sign in an assignment or declaration statement.
+
+int myFirstNumber = (10 + 5) + (2 * 10);
+
+/// Challenge : Your challenge is to create two additional variables in JShell.
+ - One variable called mySecondNumber, which is an int, with a value of 12.
+ - And another variable called myThirdNumber, also an int, with a value of 6.
+// My answer
+jshell> int mySecondNumber = 12; int myThirdNumber = 6;
+// result
+mySecondNumber ==> 12
+myThirdNumber ==> 6
+
+
+
+
+*/
