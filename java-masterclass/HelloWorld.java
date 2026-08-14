@@ -179,4 +179,36 @@ myLastOne ==> 883
 // Remember that case matters in Java code.
 // The /vars command in JShell can help identify any misspellings if there are any.
 
+
 //// Exploring Java Primitive Types : Integer Ranges and Wrapper Classes ------------------
+/*
+/// Java's Primitive Types
+// Primitive types are the most basic data types.
+// The eight primitive data types in Java are the following;
+Whole number : byte, short, int, long
+Real number (floating point or decimal) : float, double
+Single character : char
+Boolean value : boolean
+
+// Integer : a whole number, meaning it doesn't contain a fractional element or a decimal.
+There's a specific range of values allowed for the int, which is true for most data types.
+What this means is that the allowable range of values is NOT infinite.
+There's a defined minimum and maximum value for each numeric data type, meaning you can't assign a number bigger or smaller (outside of that range)
+
+jshell> int myValue = 10000;
+myValue ==> 10000
+
+jshell> int myMinIntValue = Integer.MIN_VALUE;
+myMinIntValue ==> -2147483648
+// This is the minimum value you can assign for an integer.
+jshell> int myMaxIntValue = Integer.MAX_VALUE;
+myMaxIntValue ==> 2147483647
+// This is the maximum value you can assign for an integer.
+
+
+
+
+
+
+
+*/
