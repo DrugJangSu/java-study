@@ -201,12 +201,37 @@ myValue ==> 10000
 jshell> int myMinIntValue = Integer.MIN_VALUE;
 myMinIntValue ==> -2147483648
 // This is the minimum value you can assign for an integer.
+
 jshell> int myMaxIntValue = Integer.MAX_VALUE;
 myMaxIntValue ==> 2147483647
 // This is the maximum value you can assign for an integer.
 
+// Using the + sign in System.out.print
+The plus sign +, when used in System.out.print will print different data types together as a single text.
 
+In the example;
+System.out.print("Integer Minimum Value = " + myMinIntValue);
+We want to print a label before a numeric integer value.
+whatever follows the plus sign in System.out.print here is converted to a String by Java, and concatenated to the String before it.
 
+jshell> System.out.print("Integer Minimum Value = " + myMinIntValue);
+Integer Minimum Value = -2147483648
+System.out.print("Integer Minimum Value = " + Integer.MIN_VALUE);
+Integer Minimum Value = -2147483648
+jshell> System.out.print("Integer Value Range (" + Integer.MIN_VALUE + " to " + Integer.MAX_VALUE + ")" );
+Integer Value Range (-2147483648 to 2147483647)
+
+jshell> System.out.print(
+   ...> "Integer Value Range ("
+   ...> + Integer.MIN_VALUE
+   ...> +
+   ...> " to "
+   ...> +
+   ...> Integer.MAX_VALUE
+   ...> +
+   ...> ")"
+   ...> );
+Integer Value Range (-2147483648 to 2147483647)
 
 
 
