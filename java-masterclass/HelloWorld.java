@@ -254,7 +254,6 @@ boolean - Boolean
 
 
 /// Overflow and Underflow in Java
-
 jshell> System.out.print("Busted Max value = " + (myMaxIntValue + 1));
 Busted Max value = -2147483648
 -> This is an overflow.
@@ -263,10 +262,13 @@ Busted Min value = 2147483647
 -> This is an underflow
 
 // If you try and put a value larger than the maximum value into an int, you'll create something called an Overflow situation.
-
 // And similarly if you try to put a value smaller than the minimum value into an int, you cause an Underflow to occur.
 
+These situations are also known as integer wraparounds.
+The maximum value when it overflows, wraps around to the minimum value and just continues processing without an error.
+The minimum value when it underflows, wraps around to the maximum value and continues processing.
 
+This is not usually the behavior you really want as a developer, and you need to be aware that tghis can happen. So choose the appropriate data type.
 
 
 */
