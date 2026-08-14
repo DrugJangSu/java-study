@@ -248,6 +248,25 @@ double - Double
 boolean - Boolean
 
 
+/// The Integer Wrapper Class
+// In the code we just reviewed, we were able to use MIN_VALUE and MAX_VALUE, on the wrapper class Integer.
+
+
+
+/// Overflow and Underflow in Java
+
+jshell> System.out.print("Busted Max value = " + (myMaxIntValue + 1));
+Busted Max value = -2147483648
+-> This is an overflow.
+jshell> System.out.print("Busted Min value = " + (myMinIntValue - 1));
+Busted Min value = 2147483647
+-> This is an underflow
+
+// If you try and put a value larger than the maximum value into an int, you'll create something called an Overflow situation.
+
+// And similarly if you try to put a value smaller than the minimum value into an int, you cause an Underflow to occur.
+
+
 
 
 */
