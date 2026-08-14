@@ -227,11 +227,25 @@ jshell> System.out.print(
    ...> +
    ...> " to "
    ...> +
-   ...> Integer.MAX_VALUE
+   ...> Integer.MAX_VALUE 
    ...> +
    ...> ")"
    ...> );
 Integer Value Range (-2147483648 to 2147483647)
+
+
+/// Classes
+// A class is a building block for object-oriented programming and allows us to build custom data types.
+// Wrapper Classes : The primitive types and their respective wrapper classes are the following
+(Primitive - Wrapper Class)
+byte - Byte
+short - Short
+char - Character
+int - Integer
+long - Long
+float - Float
+double - Double
+boolean - Boolean
 
 
 
