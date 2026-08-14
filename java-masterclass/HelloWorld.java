@@ -233,7 +233,6 @@ jshell> System.out.print(
    ...> );
 Integer Value Range (-2147483648 to 2147483647)
 
-
 /// Classes
 // A class is a building block for object-oriented programming and allows us to build custom data types.
 // Wrapper Classes : The primitive types and their respective wrapper classes are the following
@@ -250,7 +249,6 @@ boolean - Boolean
 
 /// The Integer Wrapper Class
 // In the code we just reviewed, we were able to use MIN_VALUE and MAX_VALUE, on the wrapper class Integer.
-
 
 
 /// Overflow and Underflow in Java
@@ -271,4 +269,32 @@ The minimum value when it underflows, wraps around to the maximum value and cont
 This is not usually the behavior you really want as a developer, and you need to be aware that tghis can happen. So choose the appropriate data type.
 
 
+An Integer wraparound event either an overflow or underflow, can occur in Java when you are using expressions that are not a simple literal value.
+The Java compiler doesn't attempt to evaluate the expression to determine its value so it DOES NOT give you an error.
+
+Here are two more examples that will compile, and result in an overflow.
+For the second example, even though we are using numeric literals in the expression, the compiler still won't try to evaluate this expression, and the code will compile resulting in an overflow condition.
+
+int willThisCompile = (Integer.MAX_VALUE + 1);
+int willThisCompile = (2147483647 + 1);
+    willThisCompile ==> -2147483648
+
+
+If you assign a numeric literal value to a data type that is outside of the range, the compiler DOEs give you an error. We looked at a similar example previously.
+
+jshell> int myMaxIntTest = 2147483648;
+|  Error:
+|  integer number too large
+|  int myMaxIntTest = 2147483648;
+|                     ^
+
+In Java, you cannot put commas in a numeric literal.
+For example the following is not vaild syntax.
+int myMaxIntTest = 2,147,483,647;
+So Java provided an alternative way to improve readability, the underscore.
+int myMaxIntTest = 2_147_483_647;
+    myMaxIntTest ==> 2147483647
+
 */
+
+//// Understanding Byte, Short, eand Long Data Types and Ther Width in Java ------------------
