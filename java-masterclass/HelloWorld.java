@@ -314,6 +314,30 @@ The minimum value of a byte is -128, the maximum value of a byte is 127.
 Given its small range you won't be using the byte data type much.
 The byte wrapper class is the Byte with the capital B.
 
+/// The short data type
+jshell> System.out.print("Short Value Range (" + Short.MIN_VALUE + " to " + Short.MAX_VALUE + ")");
+Short Value Range (-32768 to 32767)
+
+The minimum value of a short is -32768, the maximum value of a short is 32767.
+The short upper class is the Short with the capital S.
+
+
+
+// Both the byte and the short have the same overflow and underflow issue as the int data type has but obviously with their own range of numbers.
+
+
+/// Size of Primitive Types and Width
+// Size or Width is the amount of space that determines (or limits) the range of values we've been discussing:
+(Data Type) - (Width (in bits)) - (Min Value) - (Max Value)
+byte - 8 - -128 - 127
+short - 16 - -32768 - 32767
+int - 32 - -2147483648 - 2147483647
+
+A byte can store 256 numbers and occupies eight bits, and has a width of 8.
+A short can store a large range of numbers and occupies 16 bits and has a width of 16.
+
+
+
 
 
 
