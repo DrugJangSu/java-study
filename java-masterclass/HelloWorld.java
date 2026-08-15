@@ -306,8 +306,13 @@ short - Short
 int - Integer - Java's default data type for whole numbers
 long - Long - Has the largest range
 
+/// The byte data type
+jshell> System.out.print("Byte Value Range (" + Byte.MIN_VALUE + " to " + Byte.MAX_VALUE + ")");
+    Byte Value Range (-128 to 127)
 
-
+The minimum value of a byte is -128, the maximum value of a byte is 127.
+Given its small range you won't be using the byte data type much.
+The byte wrapper class is the Byte with the capital B.
 
 
 
