@@ -378,6 +378,36 @@ bigShortLiteralValue ==> 32767
 */
 //// 지금까지 내용 정리
 /*
+
+/// JShell란?
+// Java 코드를 한 줄씩 바로 테스트할 수 있는 도구. (JS의 브라우저 콘솔과 비슷한 역할)
+터미널에서 jshell 입력 -> 바로 Java 코드 테스트 가능
+/list -> 지금까지 입력한 코드 목록
+/vars -> 선언된 변수 목록
+/exit -> 종료
+
+/// Javascript와의 차이점
+// JavaScript
+출력 : console.log("Hello")
+변수선언 : let x = 5
+타입 : 자동(동적)
+따옴표 : '' "" 둘다 가능
+
+// Java
+출력 : System.out.print("Hello")
+변수선언 : int x = 5
+타입 : 수동(정적) 즉 직접 써야 함
+따옴표 : ""만 가능 (''는 문자 string용)
+
+
+/// 변수선언 규칙
+int myFirstNumber = 5;  // 선언 (타입 + 이름 + 값)
+myFirstNumber = 10;     // 재할당 (타입 없이)
+int myFirstNumber = 10; // ❌ 재선언 불가! (JS와 다른 점)
+
+Java는 int, long, boolean 등 타입 이름을 씀. (JS의 const let)
+
+/// 정수 데이터 타입 4종류
 byte - 8 bit - -128 ~ 127 - 가장 작은 정수
 short - 16 bit - -32,768 ~ 32,767 - 작은 범위의 정수
 int - 32 bit - 약 -21억 ~ 21억 - 자바 정수 계산의 기본 타입
