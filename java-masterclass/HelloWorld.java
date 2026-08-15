@@ -335,8 +335,49 @@ int - 32 - -2147483648 - 2147483647
 
 A byte can store 256 numbers and occupies eight bits, and has a width of 8.
 A short can store a large range of numbers and occupies 16 bits and has a width of 16.
+An int has a much larger range as we know and occupies 32 bits and has a width of 32.
 
+/// Using a numeric literal character suffix
+The number 100 by default is an int.
+Java allows certain numeric literals to have a suffix appended to the value to force it to be a different data type from the default type.
+The long is one of these types and its suffix is an `L`.
+This is one of the few instances Java is not case sensitive, a lowercase `I` or an uppercase `L` at the end of a whole number mean the same thing - the number is a long.
 
+jshell> long myLongValue = 100L;
+    myLongValue ==> 100
+jshell> System.out.print("A long has a width of " + Long.SIZE);
+    A long has a width of 64
+jshell> System.out.print("Long Value Range (" + Long.MIN_VALUE + " to " + Long.MAX_VALUE + ")");
+    Long Value Range (-9223372036854775808 to 9223372036854775807)
+
+The long data type has a pretty bigger range than other data types
+
+jshell> long bigLongLiteralValue = 2_147_483_647;
+    bigLongLiteralValue ==> 2147483647
+
+jshell> long bigLongLiteralValue = 2_147_483_647_234;
+|  Error:
+|  integer number too large
+|  long bigLongLiteralValue = 2_147_483_647_234;
+
+jshell> long bigLongLiteralValue = 2_147_483_647_234L; <= this will not cause an error.
+    bigLongLiteralValue ==> 2147483647234
+
+A numeric literal that exceeds Integer.MAX_VALUE must use the `L` suffix.
+We cannot create a numeric literal in Java that exceeds Integer.MAX_VALUE without using the `L` suffix, we'll always get the error `integer number too large`
+
+jshell> short bigShortLiteralValue = 32768;
+|  Error:
+|  incompatible types: possible lossy conversion from int to short
+|  short bigShortLiteralValue = 32768;
+|                               ^---^
+
+jshell> short bigShortLiteralValue = 32767;
+bigShortLiteralValue ==> 32767
+
+*/
+//// Understanding and Using Casting with Numeric Primitive Types in Java ------------------
+/*
 
 
 
