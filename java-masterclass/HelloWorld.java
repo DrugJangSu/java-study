@@ -298,3 +298,20 @@ int myMaxIntTest = 2_147_483_647;
 */
 
 //// Understanding Byte, Short, eand Long Data Types and Ther Width in Java ------------------
+/*
+/// byte, short, int, long
+(Whole number Data Type - Wrapper Class - noteworthy)
+byte - Byte - Has the smallest range
+short - Short
+int - Integer - Java's default data type for whole numbers
+long - Long - Has the largest range
+
+
+
+
+
+
+
+
+
+*/
