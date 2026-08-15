@@ -376,6 +376,27 @@ jshell> short bigShortLiteralValue = 32767;
 bigShortLiteralValue ==> 32767
 
 */
+//// 지금까지 내용 정리
+/*
+byte - 8 bit - -128 ~ 127 - 가장 작은 정수
+short - 16 bit - -32,768 ~ 32,767 - 작은 범위의 정수
+int - 32 bit - 약 -21억 ~ 21억 - 자바 정수 계산의 기본 타입
+long - 64 bit - 약 -920경 ~ 920경 - 매우 큰 정수용(숫자 뒤 L 필수)
+
+/// 자바 정수 다룰 때의 핵심 규칙
+// long 타입은 숫자 뒤에 L 필수 : 자바는 입력된 모든 정수를 기본적으로 int로 간주함. 따라서 int범위를 넘어선 큰 숫자를 쓸 때는 접미사 L을 붙여야 에러(integer number too large)가 나지 않음.
+// 가독성을 위한 언더바(_) 지원 : 자바에서는 숫자 안에 콤마(,)를 쓸 수 없는 대신, 2_147_483_647처럼 언더바(_)를 써서 천 단위 자릿수를 편하게 읽을 수 있음.
+// 오버프로우(Overflow)와 언더플로우(Underflow) : 정수 타입이 표현할 수 있는 최댓값을 넘어가면 에러 없이 최솟값으로 되돌아가고(Overflow), 반대로 최솟값보다 작아지면 최댓값으로 되돌아가는 현상(Wraparound)이 발생함.
+// 대소문자 엄격 구분 : 변수명(myLastOne vs MyLastOne)과 자바 키워드 (int VS Int) 모두 대소문자가 다르면 완전히 다른 것으로 인식함.
+
+/// 래퍼 클래스(Wrapper Class)와 JShell 활용
+// 래퍼 클래스 : int -> Integer, long -> Long 처럼 기본 데이터 타입을 감싸서 객체로 다룰 수 있게 해줌. Integer.MAX_VALUE나 Integer.MIN_VALUE처럼 해당 타입의 최대/최솟값을 확인받을 때 유용함.
+// JShell 유용한 명령어 : /vars를 입력하면 현재 세션에 선언된 모든 변수와 그 안에 들어있는 값을 한 눈에 확인할 수 있음.
+
+*/
+
+
+
 //// Understanding and Using Casting with Numeric Primitive Types in Java ------------------
 /*
 
