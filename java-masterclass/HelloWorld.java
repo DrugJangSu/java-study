@@ -380,11 +380,12 @@ bigShortLiteralValue ==> 32767
 /*
 
 /// JShell란?
-// Java 코드를 한 줄씩 바로 테스트할 수 있는 도구. (JS의 브라우저 콘솔과 비슷한 역할)
+// Java 코드를 한 줄씩 바로 테스트할 수 있는 도구. 자바 연습장 느낌임 (JS의 브라우저 콘솔과 비슷한 역할)
 터미널에서 jshell 입력 -> 바로 Java 코드 테스트 가능
 /list -> 지금까지 입력한 코드 목록
 /vars -> 선언된 변수 목록
-/exit -> 종료
+/exit -> 종료 (/ex)
+코드를 다 안치면 ...>가 뜨며 입력 대기
 
 /// Javascript와의 차이점
 // JavaScript
@@ -397,7 +398,7 @@ bigShortLiteralValue ==> 32767
 출력 : System.out.print("Hello")
 변수선언 : int x = 5
 타입 : 수동(정적) 즉 직접 써야 함
-따옴표 : ""만 가능 (''는 문자 string용)
+따옴표 : ""만 가능 (''는 문자 하나만 가능 string용)
 
 
 /// 변수선언 규칙
