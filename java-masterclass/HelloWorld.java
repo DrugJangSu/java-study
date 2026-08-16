@@ -427,7 +427,6 @@ long - 64 bit - 약 -920경 ~ 920경 - 매우 큰 정수용(숫자 뒤 L 필수)
 */
 
 
-
 //// Understanding and Using Casting with Numeric Primitive Types in Java ------------------
 /*
 
