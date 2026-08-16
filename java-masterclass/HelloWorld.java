@@ -492,5 +492,38 @@ ex) int myTotal = (myMinIntValue / 2);
 // This statement doesn't work because the expression (myMinShortValue / 2) is an int and an int can't be assigned to a short because the compiler won't guess the resuit.
 ex) short myNewShortValue = (myMinShortValue / 2);
 
+// This statement works because the result of (-128/2) is an int, but when calculations use only literal values the compiler can determine the result immediately and knows the value fits into a short.
+ex) short myNewShortValue = (short) (myMinShortValue / 2);
+
+
+/// 개인용 ---------------
+/// 한줄에 여러 변수 선언하는 규칙
+// 같은 타입인 경우 : 데이터 타입을 맨 앞에 한 번만 적고 쉼표(,)로 이어 붙일 수 있음.
+ex) byte firstByte = 1, secondByte = 2;
+
+// 다른 타입인 경우 : 데이터 타입을 한번만 적고 쉼표로 잇는 것은 불가능하며, 타입을 따로 적고 세미콜론(;)으로 구분해야 함.
+ex) short firstshort = 1; int firstInteger = 2;
+
+/// byte / 2를 했는데 에러가 나는 이유 (Java의 int 기본 법칙)
+자바는 정수끼리 연산(나누기, 더하기 등)을 할 때 결과값을 무조건 int 타입으로 변환해서 처리함.
+// 변수가 포함된 연산 (myMinByteValue / 2);
+- 컴파일러는 실행 전까지 변수에 들어있는 값을 계산해 보지 않음. 자바는 단순 연산 결과(int)
+를 더 작은 상자인 byte에 넣으려고 하니 데이터 손실 가능성 에러(possible lossy conversation)를 리턴함.
+// 숫자 그대로 적은 연산 (-128 / 2);
+- 변수 없이 숫자만 적힌 리터럴 연산은 컴파일러가 미리 계산해 봄. 결과인 -64가 byte 범위 (-128, 127)에 잘 들어가므로 에러를 내지 않음.
+
+/// 해결책 : 강제 형변환 (Casting)
+연산 결과로 튀어나온 int 값을 byte나 short 변수에 억지로 집어넣으려면 개발자가 직접 괄호 안에 원하는 타입 (byte)을 명시해서 "내가 확인했으니 강제로 타입을 줄여라"라고 지시해야 됨.
+ex) 에러코드
+byte myNewByteValue = (myMinByteValue / 2); // Error! (int를 byte에 못 넣음)
+
+ex) 형변환(Casting) 적용 코드
+byte myNewByteValue = (byte) (myMinByteValue / 2); // 정상 작동 (-64)
+short myNewShortValue = (short) (myMinShortValue / 2); // 정상 작동 (-16384)
+
+/// 결론
+// Java에서 byte나 short를 연산하면 결과는 무조건 int가 됨.
+// int로 변한 결과를 다시 byte나 short에 담고 싶으면 앞에 (byte), (short)를 붙여서 강제 형변환(Casting)을 해줘야 함.
 
 */
+//// Primitive Types Challenge : Applying Your Knowledge of Integer Variables ------------------
