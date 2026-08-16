@@ -496,7 +496,7 @@ ex) short myNewShortValue = (myMinShortValue / 2);
 ex) short myNewShortValue = (short) (myMinShortValue / 2);
 
 
-/// 개인용 ---------------
+/// 개인용 ---------------------
 /// 한줄에 여러 변수 선언하는 규칙
 // 같은 타입인 경우 : 데이터 타입을 맨 앞에 한 번만 적고 쉼표(,)로 이어 붙일 수 있음.
 ex) byte firstByte = 1, secondByte = 2;
@@ -526,4 +526,5 @@ short myNewShortValue = (short) (myMinShortValue / 2); // 정상 작동 (-16384)
 // int로 변한 결과를 다시 byte나 short에 담고 싶으면 앞에 (byte), (short)를 붙여서 강제 형변환(Casting)을 해줘야 함.
 
 */
+
 //// Primitive Types Challenge : Applying Your Knowledge of Integer Variables ------------------
