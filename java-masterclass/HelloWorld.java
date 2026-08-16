@@ -429,7 +429,17 @@ long - 64 bit - 약 -920경 ~ 920경 - 매우 큰 정수용(숫자 뒤 L 필수)
 
 //// Understanding and Using Casting with Numeric Primitive Types in Java ------------------
 /*
+/// Rules for declaring multiple variables in one statement
 
+jshell> short myMinShortValue = Short.MIN_VALUE; int myMinIntValue = Integer.MIN_VALUE;
+myMinShortValue ==> -32768
+myMinIntValue ==> -2147483648
+
+jshell> byte myMinByteValue = Byte.MIN_VALUE, myMaxByteValue = Byte.MAX_VALUE;
+myMinByteValue ==> -128
+myMaxByteValue ==> 127
+
+// You cannot declare variables with different data types in a single statement.
 
 
 
