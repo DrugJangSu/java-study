@@ -440,6 +440,17 @@ myMinByteValue ==> -128
 myMaxByteValue ==> 127
 
 // You cannot declare variables with different data types in a single statement.
+// If you declare multiple variables of the same data ttype in a single statement, you must specify the data type only once before any variable names.
+
+ex)
+jshell> short firstshort = 1; int firstInteger = 2;
+firstshort ==> 1
+firstInteger ==> 2
+
+jshell> byte firstByte = 1, secondByte = 2;
+firstByte ==> 1
+secondByte ==> 2
+
 
 
 
