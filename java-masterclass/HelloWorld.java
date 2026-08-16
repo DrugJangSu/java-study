@@ -451,9 +451,46 @@ jshell> byte firstByte = 1, secondByte = 2;
 firstByte ==> 1
 secondByte ==> 2
 
+/// Assigning expressions to varaibles with data types that don't match
 
 
+// The Java compiler does not attempt to evaluate the value in a variable when it's used in a calculation, so it doesn't know if the value fits and throws an error.
+ex) byte myNewByteValue = (myMinByteValue / 2);
+jshell> byte myNewByteValue = (myMinByteValue / 2);
+|  Error:
+|  incompatible types: possible lossy conversion from int to byte
+|  byte myNewByteValue = (myMinByteValue / 2);
+|                         ^----------------^
 
+// if your calculation uses literal values, Java can figure out the end result at compile time and whether it fits into the variable and won't throw an error if it does.
+ex) byte myNewByteValue = (-128 / 2);
+
+// In both examples an int result is being returned from the calculation but in the second example Java knows the returned value can fit into a byte.
+
+
+/// Casting in Java
+// Casting means to treat or convert a number from one type to another. We put the type we weant the number to be in parentheses like this;
+ex) (byte) (myMinByteValue /2);
+jshell> byte myNewByteValue = (byte) (myMinByteValue / 2);
+myNewByteValue ==> -64
+
+ex2)
+jshell> short myNewShortValue = (myMinShortValue / 2);
+|  Error:
+|  incompatible types: possible lossy conversion from int to short
+|  short myNewShortValue = (myMinShortValue / 2);
+|                           ^-----------------^
+
+jshell> short myNewShortValue = (short) (myMinShortValue / 2);
+myNewShortValue ==> -16384
+
+
+/// What does it mean when Java defualts the data type to an int?
+// This statement works because the result is an int, and assigning it to an int variable is fine;
+ex) int myTotal = (myMinIntValue / 2);
+
+// This statement doesn't work because the expression (myMinShortValue / 2) is an int and an int can't be assigned to a short because the compiler won't guess the resuit.
+ex) short myNewShortValue = (myMinShortValue / 2);
 
 
 */
