@@ -560,7 +560,40 @@ jshell> /list
    4 : long longTest = 50000 + 10 * (byteTest + shortTest + intTest);
 
 /// Tim's answer ------------------
+jshell> byte byteValue = 10;
+byteValue ==> 10
 
+jshell> short shortValue = 20;
+shortValue ==> 20
 
+jshell> int intValue = 50;
+intValue ==> 50
+
+jshell> long longTotal = 50000L + 10L * (byteValue + shortValue + intValue);
+longTotal ==> 50800
+
+jshell> int sumOfThree = byteValue + shortValue + intValue;
+sumOfThree ==> 80
+
+jshell> longTotal = 50000L + (10* sumOfThree);
+longTotal ==> 50800
+
+/// Using Parentheses
+// Parentheses are another way to make your code more readable.
+ex) longTotal = 50000L + (10 * sumOfThree);
+// They also make it clear which calculation should be done first.
+
+/// What if we want to do the same thing but with short
+/// 
+jshell> short shortTotal = (1000 + 10 * (byteValue + shortValue + intValue));
+|  Error:
+|  incompatible types: possible lossy conversion from int to short
+|  short shortTotal = (1000 + 10 * (byteValue + shortValue + intValue));
+|                      ^---------------------------------------------^
+
+jshell> short shortTotal = (short) (1000 + 10 * (byteValue + shortValue + intValue));
+shortTotal ==> 1800
 
 */
+
+//// Working with Float and Double : Precision in Floating Point Numbers ------------------
