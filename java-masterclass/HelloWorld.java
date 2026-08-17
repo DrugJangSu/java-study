@@ -681,6 +681,20 @@ In this case the literal value that we typed in (5.25) is being interpreted as a
 jshell> float myOtherFloatValue = (float) 5.25;
 myOtherFloatValue ==> 5.25
 
+// The above is a way of saying "Yes this is a literal double that's been typed here but we want you to treat it as a float"
+// However it's generally not recommended to do so with floats these days. Double is the preferred floating point data type to use. And also it's a lot clearer to do so as the following below;
+jshell> float myOtherFloatValue = 5.25f;
+myOtherFloatValue ==> 5.25
+
+// The F suffix is to indicate the type rather than explicitly cast it.
+
+/// Certification Exam Pointer
+// Not everyone realizes that Java's default data type for a decimal literal is a double, which is larger and more precise than a float.
+// Oracle likes to put a similar line of code in its code segments on exam questions, omitting the 'F' suffix. Without a computer to check this statement can look fairly innocuous.
+ex) float myOtherfloatValue = 5.25;
+The number 5.25 is a double so assigning it to a float will raise an error.
+This is a gift question to an exam taker if you can easily spot this compiler error.
+
 
 
 */
