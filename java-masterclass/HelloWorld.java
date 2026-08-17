@@ -641,6 +641,25 @@ float - 1.4E-45 - 3.4028235E38
 double - 4.9E-324 - 1.7976931348623157E308
 
 // A double when compared to a float can represent both a much smaller decimal value and a much larger decimal value. This is why it's called more precise.
+Because it's more precise the double is the default type for floating point numbers.
+
+jshell> System.out.print("Float Value Range(" + Float.MIN_VALUE + " to " + Float.MAX_VALUE + ")");
+Float Value Range(1.4E-45 to 3.4028235E38)
+jshell> System.out.print("Double Value Range(" + Double.MIN_VALUE + " to " + Double.MAX_VALUE + ")");
+Double Value Range(4.9E-324 to 1.7976931348623157E308)
+
+jshell> int myIntValue = 5; float myFloatValue = 5; double myDoubleValue = 5;
+myIntValue ==> 5
+myFloatValue ==> 5.0
+myDoubleValue ==> 5.0
+
+/// float and double and numeric literal suffixes
+// Important : The double data type is Java's default type for real numbers.
+- For example any number with a decimal is a double.
+- So 10.5 is a double by default in Java.
+- The double data type can be specified as a numeric literal with a suffix of either lowercase 'd', or uppercase 'D', but because doubles are the default in Java the suffix is optional to use.
+- The float data type can be specified as a numeric literal with a suffix of lowercase 'f', or uppercase 'F'. This suffix is required if your are assigning a real number to a variable that was declared with a float type.
+
 
 
 */
