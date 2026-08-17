@@ -629,6 +629,16 @@ double - 64 - 4.9E-324 - 1.7976931348623157E308
 
  // 1.4E-45 is the same as 1.4 x 10⁻⁴⁵ and 3.4E38 is the same as 3.4 x 10³⁸
 
+(Data Type) - (Min Value) - (Max Value)
+float - 1.4E-45 - 3.4028235E38
+
+- So we can say the minimum value of a float is 1.4 x 10⁻⁴⁵ and its maximum value is approximately 3.4 x 10³⁸.
+
+// Regarding the above, using the double's minimum value shown below, remembering that 10-1 - 0.1 and 10-5 = 0.00001 for example.
+// Imagine writing out the double data type's minimum value in decimal format. That would be a lot of zeros after the decimal.
+
+(Data Type) - (Min Value) - (Max Value)
+double - 4.9E-324 - 1.7976931348623157E308
 
 
 
