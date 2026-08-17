@@ -660,6 +660,27 @@ myDoubleValue ==> 5.0
 - The double data type can be specified as a numeric literal with a suffix of either lowercase 'd', or uppercase 'D', but because doubles are the default in Java the suffix is optional to use.
 - The float data type can be specified as a numeric literal with a suffix of lowercase 'f', or uppercase 'F'. This suffix is required if your are assigning a real number to a variable that was declared with a float type.
 
+jshell> myFloatValue = 5f;
+myFloatValue ==> 5.0
+
+jshell> myDoubleValue = 5d;
+myDoubleValue ==> 5.0
+
+jshell> float myOtherFloatValue = 5.25;
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  float myOtherFloatValue = 5.25;
+|                            ^--^
+// The reason for the error above is because the double is the default floating point number in Java. Java doesn't like trying to put a double into a float variable type.
+In this case the literal value that we typed in (5.25) is being interpreted as a double.
+
+/// Quick Challenge
+// Thinking back to casting, how would you do the same for the float to remove the error above?
+
+// My Answer
+jshell> float myOtherFloatValue = (float) 5.25;
+myOtherFloatValue ==> 5.25
+
 
 
 */
