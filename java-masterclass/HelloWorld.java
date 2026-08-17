@@ -528,3 +528,39 @@ short myNewShortValue = (short) (myMinShortValue / 2); // 정상 작동 (-16384)
 */
 
 //// Primitive Types Challenge : Applying Your Knowledge of Integer Variables ------------------
+/*
+/// Primitive Types Challenge
+// Your Challenge is to create four new variables;
+- A byte variable : set it to any vaild byte number
+- A short variable : set it to any vaild short number
+- An int variable : set it to any vaild integer number
+- Lastly create a variable of type long. Make it equal to 50,000 plus 10 times the sum of the values of the first 3 variables (your byte, your short and your int values). 
+In other words use the variable names in your expression to calculate the sum.
+
+/// My Answer ----------------------
+jshell> byte byteTest = 10
+byteTest ==> 10
+jshell> short shortTest = 10_000
+shortTest ==> 10000
+jshell> int intTest = 100_000_000
+intTest ==> 100000000
+jshell> /list
+
+   1 : byte byteTest = 10;
+   2 : short shortTest = 10_000;
+   3 : int intTest = 100_000_000;
+
+jshell> long longTest = 50000 + 10 * (byteTest + shortTest + intTest)
+longTest ==> 1000150100
+jshell> /list
+
+   1 : byte byteTest = 10;
+   2 : short shortTest = 10_000;
+   3 : int intTest = 100_000_000;
+   4 : long longTest = 50000 + 10 * (byteTest + shortTest + intTest);
+
+/// Tim's answer ------------------
+
+
+
+*/
