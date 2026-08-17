@@ -601,6 +601,16 @@ shortTotal ==> 1800
 /// Floating-point Numbers
 // unlike whole numbers, floating-point numbers have fractional partst hat we express with a decimal point.
 
+// ex)
+Whole Number Examples : 3, 100000, -2147483649L
+Floating Point Examples : 3.14159, 10.0, -0.66666666666666667
+
+// Floating-point numbers are also known as real numbers.
+
+/// Floating-point number Data Types
+// Use a floating-point number when we need more precision in calculations
+// There are two primitive types in Java for expressing floating-point numbers, the float and the double.
+- The double is Java's default type for any decimal or real number.
 
 
 
