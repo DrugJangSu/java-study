@@ -695,6 +695,30 @@ ex) float myOtherfloatValue = 5.25;
 The number 5.25 is a double so assigning it to a float will raise an error.
 This is a gift question to an exam taker if you can easily spot this compiler error.
 
+/// 정리 ------------
+/// 이번 챕터는 "자바에서 소수점이 있는 실수(Real Number)를 다루는 2가지 데이터 타입(float, double)과 실수 연산의 기본 규칙"에 관한 내용임.
 
+/// Float (단정밀도)
+크기/ 표현 범위 : 32 bit (소수점 약 6~7자리)
+자바의 기본 여부 : 선택
+접미사 : f 또는 F (필수)
+
+/// Double (배정밀도)
+크기/ 표현 범위 : 64 bit (소수점 약 15~17자리)
+자바의 기본 여부 : 실수(Decimal)와 기본(Default) 타입
+접미사 : d 또는 D (생략 가능)
+
+
+/// 핵심
+// 소수점 숫자는 기본적으로 double 취급
+- 정수영 기본이 int인 것처럼 자바에서 소수점이 붙은 숫자 리터럴(예시 5.25)은 무조건 double 타입으로 인식됨.
+// float 변수에 대입할 때 접미사 f가 필수인 이유
+- float myValue = 5.25; 라고 적으면 자바는 큰 상자(double)의 데이터를 더 작은 상자(float)에 담으려고 시도하기 때문에 데이터 손실 에러(incompatible types : possible lossy conversation)를 발생시킴.
+- 이를 해결하려면 숫자 뒤에 접미사 f를 붙여 5.25f로 적거나, (float) 5.25로 강제 형변환(casting)를 해주어야 함. (실무에서는 주로 접미사 f를 주로 사용)
+// 지수 표기법 (E-notation)
+- 1.4E-45에서 E-45는 10⁻⁴⁵를 의미함. double는 float보다 훨씬 작은 소수점 아래 숫자부터 거대한 숫자까지 더 정밀하게 표현할 수 있어 실무 및 현대 프로그래밍에서 기본 실수 타입으로 선호됨.
+// 자바 시험(OCP) 및 면접 단골 함정
+시험에서는 float myFloat = 5.25;처럼 f 접미사를 슬쩍 빼놓은 코드가 자주 등장함. 자바 컴파일러 기준으로는 에러가 발생하는 코드임을 한눈에 파악할 수 있어야 함.
 
 */
+//// Understanding Floating-Point Precision : A practical Challenge in Java ------------------
