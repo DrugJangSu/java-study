@@ -640,6 +640,7 @@ float - 1.4E-45 - 3.4028235E38
 (Data Type) - (Min Value) - (Max Value)
 double - 4.9E-324 - 1.7976931348623157E308
 
+// A double when compared to a float can represent both a much smaller decimal value and a much larger decimal value. This is why it's called more precise.
 
 
 */
