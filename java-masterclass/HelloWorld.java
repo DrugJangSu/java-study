@@ -613,5 +613,23 @@ Floating Point Examples : 3.14159, 10.0, -0.66666666666666667
 - The double is Java's default type for any decimal or real number.
 
 
+/// Single and Double Precision
+// Precision refers to the format and amount of space occuiped by the relevant type.
+// The following shows the width of each of the floating point types and their ranges.
+// The ranges are shown in Java's scientific notation, which we show below in blue color.
+
+(Data Type) - (Width in bits) - (Min Value) - (Max Value)
+float - 32 - 1.4E-45 - 3.4028235E38
+double - 64 - 4.9E-324 - 1.7976931348623157E308
+
+- You can see the e-notation followed by either a positive or negative number.
+
+/// Java's Scientifc Notation
+// Scientific notation can be translated into more familiar terms by replacing the 'E' in the number with the phrase 'times 10 to the power of'.
+
+ // 1.4E-45 is the same as 1.4 x 10⁻⁴⁵ and 3.4E38 is the same as 3.4 x 10³⁸
+
+
+
 
 */
