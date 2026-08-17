@@ -597,3 +597,10 @@ shortTotal ==> 1800
 */
 
 //// Working with Float and Double : Precision in Floating Point Numbers ------------------
+/*
+/// Floating-point Numbers
+// unlike whole numbers, floating-point numbers have fractional partst hat we express with a decimal point.
+
+
+
+*/
