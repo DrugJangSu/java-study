@@ -804,5 +804,23 @@ jshell> System.out.print("Converted kilograms = " + convertedKilograms);
 Converted kilograms = 90.718474
 
 
+// extra examples
+jshell> double pi = 3.1415927d;
+pi ==> 3.1415927
+jshell> double anotherNumber = 3_000_000.4_567_890d;
+anotherNumber ==> 3000000.456789
+
+
+/// Floating Point Number Precision Tips
+In general float and double are great for general floating point operations.
+But neither should be used when precise calculations are required - this is due to a limitation with how floating point numbers are stored, and not a Java problem as such.
+-> Java has a class called BigDecimal that overcomes this.
+(But for general calculations a float or a double will do just fine.)
+*/
+
+
+//// Exploring Character (char) and Boolean Primitive Data Types in Java ------------------
+/*
+
 
 */
