@@ -762,5 +762,9 @@ jshell> myFloatValue = 5f / 3f;
 myFloatValue ==> 1.6666666 (Infinite)
 jshell> myDoubleValue = 5d / 3d;
 myDoubleValue ==> 1.6666666666666667 (16 decimals -> and it shows that a double accurately represents than a float)
+jshell> myDoubleValue = 5.00 /3.00;
+myDoubleValue ==> 1.6666666666666667 (This has the same result as above because Java will look at the decimal number and assume it's a double.)
+
+
 
 */
