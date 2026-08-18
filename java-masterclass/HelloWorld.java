@@ -765,6 +765,21 @@ myDoubleValue ==> 1.6666666666666667 (16 decimals -> and it shows that a double 
 jshell> myDoubleValue = 5.00 /3.00;
 myDoubleValue ==> 1.6666666666666667 (This has the same result as above because Java will look at the decimal number and assume it's a double.)
 
+jshell> myDoubleValue = 5.00 / 3; (As long as one of the operands is a double, the result will be a double.)
+myDoubleValue ==> 1.6666666666666667
+
+jshell> myFloatValue = 5.00 /3f; <= this will not work since you cannot assign a double to a float variable.
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  myFloatValue = 5.00 /3f;
+|                 ^------^
+
+/// Why is the double a better choice in most circumstances? 
+1) It's actually faster to process on many modern computers
+- It's because computers have at the chip level the functionality to actually deal with these double numbers faster than the equivalent float.
+2) The Java liberaries that we'll get into later - particularly math functions are often  written to process doubles and not floats and to return the result as a double.
+- The creators of Java selected the double because it's more precise and it can handle a larger range of numbers.
+
 
 
 */
