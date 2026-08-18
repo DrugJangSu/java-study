@@ -816,6 +816,27 @@ In general float and double are great for general floating point operations.
 But neither should be used when precise calculations are required - this is due to a limitation with how floating point numbers are stored, and not a Java problem as such.
 -> Java has a class called BigDecimal that overcomes this.
 (But for general calculations a float or a double will do just fine.)
+
+/// 이번 챕터 요약 -----------------------------------
+// 1. 정수 나눗셈 vs 실수 나눗셈
+- 정수 연산(5 / 2) : 정수끼리 나누면 소수점 이하를 버리고 정수 결과 2만 남김.
+- 실수 연산 (5f / 2f) 또는 (5d / 2d) : 소수점을 포함한 2.5가 정상적으로 산출됨.
+- 타입 승격 연산 (5.00 / 3) : 연산 대상 중 하나라도 double (5.00) 이면 전체 결과도 double이 됨.
+    -> 5.00 / 3f 의 결과는 double가 되므로 이를 float 변수에 대입하려고 하면 컴파일 에러가 터짐.
+
+// 2. float와 double 정밀도 비교 (5 / 3)
+float (5f / 3f)  => 1.666666 ~ : 소수점 아래 약 6~7자리까지 표현 (실질적으로는 무한대로 정밀한 계산 요할 시 불정확할 수 있음)
+double (5d / 3d) => 1.66666667 : 소수점 아래 약 15~17자리까지 정밀하게 표현
+
+// 3. 실무에서 double을 주로 사용하는 이유
+- 하드웨어 최적화 : 최신 CPU 하드웨어 칩셋은 64비트(double) 부동소수점 연산을 매우 빠르게 처리하도록 설계되어 있음
+- 자바 표준 라이브러리 연동 : 자바의 Math 클래스를 비롯한 주요 수학 함수들이 기본적으로 double을 매개변수와 반환값으로 사용함.
+- 넓은 범위와 높은 정밀도 : 표현할 수 있는 수의 범위가 훨씬 넓어 계산 오류 위험이 적음.
+
+// 4. 부동소수점 오차와 BigDecimal (중요)
+파운드 킬로그램 환산 예제에서 2.2679618500000003처럼 끝자리에 미세한 잔여 숫자가 붙는 현상처럼 컴퓨터가 2진수로 실수를 저장할 때 발생하는 부동소수점 표현 방식의 근본적 한계가 있음.
+- 정밀 연산 : 금융(돈 계산), 정밀 측정 등 단 0.0001의 오차도 허용해서는 안되는 분야에서는 float나 double 대신 자바의 BigDecimal 클래스를 반드시 사용해야 함.
+- 그 외 일반 연산 및 일반적인 앱 및 소프트웨어 개발은 float나 double를 사용함.
 */
 
 
