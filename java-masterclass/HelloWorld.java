@@ -780,6 +780,29 @@ jshell> myFloatValue = 5.00 /3f; <= this will not work since you cannot assign a
 2) The Java liberaries that we'll get into later - particularly math functions are often  written to process doubles and not floats and to return the result as a double.
 - The creators of Java selected the double because it's more precise and it can handle a larger range of numbers.
 
+/// Quick Challenge
+// The objective of this challenge is to convert a given numnber of pounds to kilograms.
+Steps
+    1) Create a variable with the appropriate type to store the number of pounds that we want to convert into kilograms.
+    2) Calculate kilograms using the variable above and store the result in a 2nd appropriately typed variable.
+    3) print the result.
+Don't forget to use the conversion formula:
+    1 pound is equal to 0.45359237 of a kilogram.
+
+// My Answer
+jshell> double poundVariable = 5;
+poundVariable ==> 5.0
+jshell> double kilogramVariable = poundVariable * 0.45359237;
+kilogramVariable ==> 2.2679618500000003
+
+// Tim's answer
+jshell> double numberOfPounds = 200d;
+numberOfPounds ==> 200.0
+jshell> double convertedKilograms = numberOfPounds * 0.45359237d;
+convertedKilograms ==> 90.718474
+jshell> System.out.print("Converted kilograms = " + convertedKilograms);
+Converted kilograms = 90.718474
+
 
 
 */
