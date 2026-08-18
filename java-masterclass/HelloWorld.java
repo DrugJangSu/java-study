@@ -722,3 +722,33 @@ This is a gift question to an exam taker if you can easily spot this compiler er
 
 */
 //// Understanding Floating-Point Precision : A practical Challenge in Java ------------------
+/*
+jshell> int myIntValue = 5; float myFloatValue = 5f; double myDoubleValue = 5d;
+myIntValue ==> 5
+myFloatValue ==> 5.0
+myDoubleValue ==> 5.0
+
+/// Default output for numeric data types
+
+// Whole Number Examples
+(Literal Value) -> (Default Output)
+5 -> 5
+500_000_000_000L -> 500000000000
+
+// Floating Point Examples
+(Literal Value) -> (Default Output)
+5 -> 5.0
+5.000000 -> 5
+5f -> 5.0
+5d -> 5.0
+5e1 -> 50.0
+5_000_000.0 -> 5000000.0
+50_000_000.0 -> 5.0E7
+
+
+jshell> myIntValue = 5 / 2;
+myIntValue ==> 2  (Because both 5 and 2 are integers the result is an integer value without decimals.)
+
+
+
+*/
