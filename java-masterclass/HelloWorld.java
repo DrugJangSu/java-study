@@ -749,6 +749,13 @@ myDoubleValue ==> 5.0
 jshell> myIntValue = 5 / 2;
 myIntValue ==> 2  (Because both 5 and 2 are integers the result is an integer value without decimals.)
 
+jshell> myFloatValue = 5f / 2f;
+myFloatValue ==> 2.5 (The suffix made these numeric literals into floats -> so Java returns a float.)
+
+jshell> myDoubleValue = 5d / 2d;
+myDoubleValue ==> 2.5 (Same as above but as a double)
+
+
 
 
 */
