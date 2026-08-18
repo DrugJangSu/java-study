@@ -755,7 +755,12 @@ myFloatValue ==> 2.5 (The suffix made these numeric literals into floats -> so J
 jshell> myDoubleValue = 5d / 2d;
 myDoubleValue ==> 2.5 (Same as above but as a double)
 
-
-
+ex)
+jshell> myIntValue = 5 / 3;
+myIntValue ==> 1
+jshell> myFloatValue = 5f / 3f;
+myFloatValue ==> 1.6666666 (Infinite)
+jshell> myDoubleValue = 5d / 3d;
+myDoubleValue ==> 1.6666666666666667 (16 decimals -> and it shows that a double accurately represents than a float)
 
 */
