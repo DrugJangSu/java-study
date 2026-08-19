@@ -980,7 +980,16 @@ boolean 변수는 "질문하는 듯한 이름"으로 지어주는 것이 실무�
 */
 //// Recap of Primitive Types and Introduction to the String Class in Java ---------------------------------------------------------------
 /*
+/// Recap
+/// Java's 8 Primitive Data Types
+- Whole number : byte, short, int, long
+- Real Number : float, double
+- Single character : char
+- Boolean value : boolean
+// The int and a double are Java's default data types for numeric literals.
 
+
+ 
 
 
 
