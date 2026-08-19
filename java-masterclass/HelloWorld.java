@@ -978,4 +978,12 @@ boolean 변수는 "질문하는 듯한 이름"으로 지어주는 것이 실무�
 - can 접두사 : canAccessAdminPage
 
 */
-//// Recap of Primitive Types and Introduction to the String Class in Java -----------------------------------------------------
+//// Recap of Primitive Types and Introduction to the String Class in Java ---------------------------------------------------------------
+/*
+
+
+
+
+
+
+*/
