@@ -1091,9 +1091,34 @@ The net result is that our variable, lastString, has the concatenated value. How
 - But it's not a primitive type at all, it's a class.
 
 /// 이번챕터 정리 ----------------
+/// 자바의 기본 타입 8가지 재정리, String 클래스의 특징 및 동작 원리
+/// 
+// 자바의 기본 데이터 타입 8가지 요약
+- 정수형 : byte, short, int (정수 리터럴 기본), long
+- 실수형 : float, double (실수 리터럴 기본)
+- 문자형 : char
+- 논리형 : boolean
 
+// String 클래스의 핵심 특징
+- 클래스(Class) 타입 : String은 기본 타입(Primitive)이 아닌 객체(Class)임. 그러나 자바에서 워낙 많이 쓰여 기본 타입마냥 편리하게 사용 가능함. (Class이므로 대문자로 시작함)
+- 큰따옴표 사용("") : 단일 문자인 char는 작은따옴표(''), 문자열인 String은 큰따옴표("") 사용.
 
+// 문자열 연결(+)과 불변성(Immutability)
+- + 연산자의 변신 (Concatenation) : String과 다른 모든 데이터 타입에 + 을 사용하면 덧셈이 아닌 문자열 이어붙이기로 작동하여 결과가 무조건 String으로 출력됨.
+    ex)
+    "250.55" + "49.45" = "250.5549.45"
+    "10"(String) + 50(int) = "1050" (String)
+- String은 불변(Immutable) 객체 : 한번 생성된 String 객체의 내부 값은 절대 수정할 수 없음.
+    ex)
+    lastString = lastString + 120.47; 을 수행할 때 기존 메모리의 값이 바뀌는 것이 아닌 합쳐진 새로운 String 객체를 메모리에 새로 만들고 기존 객체를 버림.
 
+// String vs StringBuilder
+String : 불변(Immutable), + 연산 및 큰따옴표 리터럴 사용 가능
+StringBuilder : 가변(Mutable), 기존 메모리에서 문자열을 직접 수정 가능 (+ 연산자 사용 불가)
+
+// Jshell 팁 : 여러 문장 한번에 실행하기
+- 중괄호 사용 {} : {를 입력하고 Enter를 치면 ...> 모양의 추가 입력창이 뜸. 여러 줄 작성 뒤 }로 닫고 Enter를 누르면 한번에 실행됨.
+- 한줄에 작성 : 문자 끝마다 세미콜론(;)을 붙여 한 줄에 이어 써도 동일하게 작동함.
 
 
 
