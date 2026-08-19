@@ -1029,6 +1029,8 @@ jshell> {     /// start with a curly opening brace
    ...> } // end with a curly closing brace
 // Jshell will display an alternate prompt as you can see, three dots and a greater than sign. (...>)
 // You can add a statement and press enter, until you've added as many statements as you want to run.
+// Finally add the closing curly brace, noting that a semicolon is not required after the brace.
+// Once you press enter after the closing brace, all of your statements will run in the order you put them.
 
 
 
