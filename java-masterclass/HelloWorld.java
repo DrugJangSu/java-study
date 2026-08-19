@@ -1077,7 +1077,10 @@ lastString ==> "1050120.47" <= the behavior is exactly the same despite it's a d
 /// Strings are Immutable
 // Immutable means you can't change a String after it's created.
 // So in the case of the code we've written the value 120.47 is technically not appended to the current contents of lastString.
-lastString = lastString + doubleNumber;
+    lastString = lastString + doubleNumber;
+Instead a new String is created automatically by Java. The new String consists of the previous value of lastString, plus a textual representation of the double value 120.47.
+The net result is that our variable, lastString, has the concatenated value. However Java created a new String in the process and the old one will get discarded from meomory automatically.
+
 
 
 
