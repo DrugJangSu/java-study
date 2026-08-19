@@ -874,6 +874,29 @@ jshell> char myChar = 'DD'; <= char only allows us to save only one character fo
 - So when you print a char you will see the mapped character, and not the representative number.
 - And you can use single quotes and a character literal to assign a value to a char which is much simpler than looking up the representative number.
 
+/// Unicode
+// Unicode is an international encoding standard for use with different languages and scripts by each letter, digit or symbol is assigned a unique numeric value that applies across different platforms and programs.
+// In the English alphabet we've got the letters A through Z meaning only 26 characters are needed in total to represent the entire English alphabet.
+// But other languages need more characters and often a lot more.
+
+// symbl.cc <- unicode site
+
+// If we're to print out D from the unicode;
+// On the side it says 	U+0044
+jshell> char myUnicode = '\u0044';
+myUnicode ==> 'D'
+
+// Also it says HTML : &#68;
+jshell> char myDecimalCode = 68;
+myDecimalCode ==> 'D'
+
+/// Assigning values to a char variable
+// There are three ways to assign a value to a char: Each of these methods represent storing the letter, capital D in memory.
+(Assignment type) - (Example Code)
+a literal character - char myChar = 'D';
+a Unicode value - char myChar = '\u0044'
+an integer vcalue char myChar = 68;
+
 
 
 
