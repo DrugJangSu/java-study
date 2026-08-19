@@ -839,9 +839,35 @@ double (5d / 3d) => 1.66666667 : 소수점 아래 약 15~17자리까지 정밀�
 - 그 외 일반 연산 및 일반적인 앱 및 소프트웨어 개발은 float나 double를 사용함.
 */
 
-
 //// Exploring Character (char) and Boolean Primitive Data Types in Java ------------------
 /*
+/// String Literal Example
+jshell> System.out.print("Hello World");
+
+/// Comparing the char to the String
+// This table is a quick summary of the differences between the char and the String.
+Char
+- Holds one and only one character
+- Literal enclosed in Single Quotes
+
+String
+- Can hold multiple characters
+- Literal enclosed in Double Quotes
+
+jshell> char myChar = 'D';
+myChar ==> 'D'
+
+jshell> char myChar = 'DD'; <= char only allows us to save only one character for a single variable.
+|  Error:
+|  unclosed character literal
+|  char myChar = 'DD';
+|                ^
+
+/// Is there a good use for the char data type in today's computing world?
+- One example might be to store the last key pressed by a user in game.
+- Another might be to loop programmatically through the letters in an alphabet.
+
+
 
 
 */
