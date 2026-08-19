@@ -1063,6 +1063,11 @@ myInt ==> 50
 jshell> lastString = lastString + myInt; <= Despite using an integer data type it ended up concatenating the integer to the string value.
 lastString ==> "1050"
 
+/// String concatenation
+// In Java the + symbol is an operator which can mean addition if used for numbers.
+But it also means concatenation when applied to a String.
+A String + anything else gives us a String as a result, concatenating anything after the String as text to the intial String.
+
 
 
 */
