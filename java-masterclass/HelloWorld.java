@@ -1114,7 +1114,7 @@ The net result is that our variable, lastString, has the concatenated value. How
 
 // String vs StringBuilder
 String : 불변(Immutable), + 연산 및 큰따옴표 리터럴 사용 가능
-StringBuilder : 가변(Mutable), 기존 메모리에서 문자열을 직접 수정 가능 (+ 연산자 사용 불가)
+StringBuilder : 가변(Mutable), 객체의 내용을 변경하는 메서드를 제공 (문자열을 반복적으로 수정해야 할 때 사용하는 mutable 클래스)
 
 // Jshell 팁 : 여러 문장 한번에 실행하기
 - 중괄호 사용 {} : {를 입력하고 Enter를 치면 ...> 모양의 추가 입력창이 뜸. 여러 줄 작성 뒤 }로 닫고 Enter를 누르면 한번에 실행됨.
