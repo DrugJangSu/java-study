@@ -1081,6 +1081,10 @@ lastString ==> "1050120.47" <= the behavior is exactly the same despite it's a d
 Instead a new String is created automatically by Java. The new String consists of the previous value of lastString, plus a textual representation of the double value 120.47.
 The net result is that our variable, lastString, has the concatenated value. However Java created a new String in the process and the old one will get discarded from meomory automatically.
 
+/// String vs StringBuilder
+- The String class is immutable, but can be used much like a primitive data type.
+- The StringBuilder class is mutable, meaning it can be changed but does not share the String's special features, such as being able to assign it a String literal or use the plus operator on it.
+// Both are classes, but the STring class is in a special category in the Java language.
 
 
 
