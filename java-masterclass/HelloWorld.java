@@ -1032,6 +1032,12 @@ jshell> {     /// start with a curly opening brace
 // Finally add the closing curly brace, noting that a semicolon is not required after the brace.
 // Once you press enter after the closing brace, all of your statements will run in the order you put them.
 
+jshell> {
+   ...>     String numberString = "250.55";
+   ...>     numberString = numberString + "49.45";
+   ...>     System.out.print(numberString);
+   ...> }
+250.5549.45
 
 
 */
