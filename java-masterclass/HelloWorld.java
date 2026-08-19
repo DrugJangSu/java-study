@@ -1020,6 +1020,15 @@ ex)
 jshell> myString = "I wish I had \u00241,000,000.00";
 myString ==> "I wish I had $1,000,000.00"
 
+/// Executing multiple lines of code in Jshell
+// To execute multiple lines of code as a set, in Jshell first start with an opening curly brace and press enter.
+jshell> {     /// start with a curly opening brace
+   ...>     first_statement;
+   ...>     second_statement;
+   ...>     third_statement;
+   ...> } // end with a curly closing brace
+// Jshell will display an alternate prompt as you can see, three dots and a greater than sign. (...>)
+// You can add a statement and press enter, until you've added as many statements as you want to run.
 
 
 
