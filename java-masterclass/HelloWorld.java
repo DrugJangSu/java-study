@@ -1037,7 +1037,18 @@ jshell> {
    ...>     numberString = numberString + "49.45";
    ...>     System.out.print(numberString);
    ...> }
-250.5549.45
+
+jshell> String numberString = "250.55"; numberString = numberString + "49.45"; System.out.print(numberString);
+numberString ==> "250.55"
+numberString ==> "250.5549.45"
+250.5549.45 <= also have the same result.
+
+
+/// Executing Multiple Statements in Jshell
+// There are two ways to execute multiple statements in Jshell.
+- Put your statements on a single line.
+- Or enclose your statements in a set of curly braces {}.
+
 
 
 */
