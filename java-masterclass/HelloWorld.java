@@ -1032,6 +1032,12 @@ jshell> {     /// start with a curly opening brace
 // Finally add the closing curly brace, noting that a semicolon is not required after the brace.
 // Once you press enter after the closing brace, all of your statements will run in the order you put them.
 
+/// Executing Multiple Statements in Jshell
+// There are two ways to execute multiple statements in Jshell.
+- Put your statements on a single line.
+- Or enclose your statements in a set of curly braces {}.
+
+
 jshell> {
    ...>     String numberString = "250.55";
    ...>     numberString = numberString + "49.45";
@@ -1042,13 +1048,20 @@ jshell> String numberString = "250.55"; numberString = numberString + "49.45"; S
 numberString ==> "250.55"
 numberString ==> "250.5549.45"
 250.5549.45 <= also have the same result.
+// The result for this is because both are strings(text data type), not a numeric type.
 
 
-/// Executing Multiple Statements in Jshell
-// There are two ways to execute multiple statements in Jshell.
-- Put your statements on a single line.
-- Or enclose your statements in a set of curly braces {}.
+jshell> int myInt = "10"; <= This is because we try to put a string into an int variable.
+|  Error:
+|  incompatible types: java.lang.String cannot be converted to int
+|  int myInt = "10";
+|              ^--^
 
+jshell> String lastString = "10"; int myInt = 50;
+lastString ==> "10"
+myInt ==> 50
+jshell> lastString = lastString + myInt; <= Despite using an integer data type it ended up concatenating the integer to the string value.
+lastString ==> "1050"
 
 
 
