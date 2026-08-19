@@ -912,6 +912,23 @@ jshell> char myDecimalChar = 63;
 myDecimalChar ==> '?'
 
 // Tim's answer
+jshell> char mySimpleChar = '?';
+mySimpleChar ==> '?'
+
+jshell> char myUnicodeChar = '\u003f'
+myUnicodeChar ==> '?'
+
+jshell> char myDecimalChar = 63;
+myDecimalChar ==> '?'
+
+System.out.print("My values are "+ mySimpleChar + myUnicodeChar + myDecimalChar);
+My values are ???
+
+
+/// Boolean Primitive Type
+// A boolean value allows for two opposite choices - true or false, yes or no, one or zero.
+// In Java terms we've got a boolean primitive type, and it can be set to two values only, either true or false.
+// The wrapper for boolean is Boolean with a capital B.
 
 
 
