@@ -1008,6 +1008,17 @@ jshell> System.out.print("myString is equal to " + myString); <= You can also ou
 myString is equal to This is a string
 
 
+// When the plus operator follows a string it's technically called the concatenation operator because the text that follows it is concatenated to the previous text and returned as a result of that operation and we can see from the output that the string is now equal to the full text.
+ex)
+jshell> myString = myString + ", and this is more."
+myString ==> "This is a string, and this is more."
+jshell> System.out.print("myString is equal to " + myString);
+myString is equal to This is a string, and this is more.
+
+// You can also use the string with unicode.
+ex)
+jshell> myString = "I wish I had \u00241,000,000.00";
+myString ==> "I wish I had $1,000,000.00"
 
 
 
