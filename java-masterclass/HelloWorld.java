@@ -989,7 +989,24 @@ boolean 변수는 "질문하는 듯한 이름"으로 지어주는 것이 실무�
 // The int and a double are Java's default data types for numeric literals.
 
 
- 
+ /// Handling Data in Java
+ // You'll use the data as the following;
+    Java's Primitives (boolean, byte, char, double, float, int, long, short)
+    Java's Built-in Classes (Wrappers(Boolean, Byte, Character, etc.), BigDecimal, String)
+    Your Classes
+    Somebody Else's Classes
+
+=> You'll use Java's primitive data types, Java's built-in classes, and probably some combination of your own custom classes and classes created by other people.
+
+/// What is a String?
+// A String is a class that contains a sequence of characters.
+ex)
+jshell> String myString = "This is a string"; <= also you need to do the capital S for string
+myString ==> "This is a string
+
+jshell> System.out.print("myString is equal to " + myString); <= You can also output a string literal and a string variable by using the plus operator. 
+myString is equal to This is a string
+
 
 
 
