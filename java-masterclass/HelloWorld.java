@@ -930,7 +930,52 @@ My values are ???
 // In Java terms we've got a boolean primitive type, and it can be set to two values only, either true or false.
 // The wrapper for boolean is Boolean with a capital B.
 
+jshell> boolean myTrueBooleanValue = true;
+myTrueBooleanValue ==> true
 
+jshell> boolean myFaloseBooleanValue = false;
+myFaloseBooleanValue ==> false
 
+jshell> boolean isCustomerOverTwentyOne = true;
+isCustomerOverTwentyOne ==> true
+
+/// why would you start your boolean variable name withe the prefix 'is'
+Developers will often use the word is - as a prefix for a boolean variable name.
+This creates a name that seems to ask a question, which makes reading the code more intuitive.
+But other prefixese can be just as vaild.
+
+ex) Here are some example boolean names, such as isMarried and hasChildren, that clearly define what condition is being tested;
+- isCustomerOverTwentyOne
+- isEligibleForDiscount
+- hasValidLicense
+- isMarried
+- hasChildren
+
+/// 이번챕터 정리 ----------------
+/// 이번 챕터는 자바의 기본 데이터 타입 중 단일 문자를 다루는 char와 참/거짓을 다루는 boolean에 관한 내용.
+// char (문자형) 핵심 개념
+char는 단 하나의 문자만 저장할 수 있는 타입으로 메모리에서 2바이트(16비트)를 차지함. 내부적으로는 유니코드 숫자값으로 변환되어 저장됨.
+(구분) - char(문자형) - String(문자열)
+저장 용량 - 오직 문자 1개 - 0개 이상의 문자 여러 개
+표기법 - 작은따옴표 ('A', '?') - 큰따옴표 ('Hello')
+메모리 크기 - 2 bytes(16 bit) - 가변적
+
+// char에 값을 넣는 3가지 방법
+유니코드(Unicode) 체계를 지원하므로 동일한 문자를 3가지 표현 방식으로 할당할 수 있음.
+- 문자 직접 입력(Literal) : char c1 = '?';
+- 유니코드 16진수 (Unicode) : char c2 = '\u003f'; (16진수 코드 앞에 기호 사용)
+- 10진수 숫자 (Decimal) : char c3 = 63; (유니코드/ASCII의 10진수 번호 직접 대입)
+
+// boolean (논리형) 핵심 개념
+조건이나 상태를 표현할 때 쓰이며 오직 두가지 값만 가질 수 있음.
+- 허용되는 값 : true 또는 false (대소문자 엄격 구분, 소문자만 가능)
+- 래퍼 클래스 : Boolean
+
+// 실무 네이밍 컨벤션 (변수 이름 짓기 팁)
+boolean 변수는 "질문하는 듯한 이름"으로 지어주는 것이 실무에서의 표준 규칙임. 코드 가독성이 획기적으로 올라감.
+- is 접두사 : isCustomerOverTwentyOne, isMarried
+- has 접두사 : HasVaildLicense, hasChildren
+- can 접두사 : canAccessAdminPage
 
 */
+//// Recap of Primitive Types and Introduction to the String Class in Java -----------------------------------------------------
