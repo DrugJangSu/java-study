@@ -1086,7 +1086,23 @@ The net result is that our variable, lastString, has the concatenated value. How
 - The StringBuilder class is mutable, meaning it can be changed but does not share the String's special features, such as being able to assign it a String literal or use the plus operator on it.
 // Both are classes, but the STring class is in a special category in the Java language.
 
+/// The String
+- The String is so intrinsic to the Java language it can be used like a 9th primitive type.
+- But it's not a primitive type at all, it's a class.
 
+/// 이번챕터 정리 ----------------
+
+
+
+
+
+
+
+*/
+
+//// Mastering Operators, Operands, and Expressions in Java Programming ---------------------------------------------------------------
+/*
+ 
 
 
 */
