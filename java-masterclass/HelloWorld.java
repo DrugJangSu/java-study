@@ -897,6 +897,20 @@ a literal character - char myChar = 'D';
 a Unicode value - char myChar = '\u0044'
 an integer vcalue char myChar = 68;
 
+/// The char Challenge
+// Create three char variables to store the character for the question-mark symbol.
+- mySimpleChar should be assigned the literal question-mark character ?.
+- myUnicodeChar should be assigned the unicode value for the question-mark ?.
+- myDecimalChar should be assigned the decimal value for the question-mark ?.
+
+// My Answer --------
+jshell> char mySimpleChar = '?';
+mySimpleChar ==> '?'
+jshell> char myUnicodeChar = '\u003f'
+myUnicodeChar ==> '?'
+jshell> char myDecimalChar = 63;
+myDecimalChar ==> '?'
+
 
 
 
