@@ -1057,16 +1057,23 @@ jshell> int myInt = "10"; <= This is because we try to put a string into an int 
 |  int myInt = "10";
 |              ^--^
 
-jshell> String lastString = "10"; int myInt = 50;
-lastString ==> "10"
-myInt ==> 50
-jshell> lastString = lastString + myInt; <= Despite using an integer data type it ended up concatenating the integer to the string value.
-lastString ==> "1050"
 
 /// String concatenation
 // In Java the + symbol is an operator which can mean addition if used for numbers.
 But it also means concatenation when applied to a String.
 A String + anything else gives us a String as a result, concatenating anything after the String as text to the intial String.
+
+jshell> String lastString = "10"; int myInt = 50;
+lastString ==> "10"
+myInt ==> 50
+jshell> lastString = lastString + myInt; <= Despite using an integer data type it ended up concatenating the integer to the string value.
+lastString ==> "1050" <= This is treated as a string because it's a String + anything else
+
+jshell> double doubleNumber = 120.47; lastString = lastString + doubleNumber;
+doubleNumber ==> 120.47
+lastString ==> "1050120.47" <= the behavior is exactly the same despite it's a double
+
+
 
 
 
