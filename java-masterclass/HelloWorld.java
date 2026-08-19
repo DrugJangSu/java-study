@@ -867,6 +867,13 @@ jshell> char myChar = 'DD'; <= char only allows us to save only one character fo
 - One example might be to store the last key pressed by a user in game.
 - Another might be to loop programmatically through the letters in an alphabet.
 
+/// char Data Type
+// A char occupies two bytes of memory or 16 bits and thus has a width of 16.
+- The reason is not because it's a single byte, it is that a char is stored as a 2 byte number similar to the short.
+// This number gets mapped to a single character in Java.
+- So when you print a char you will see the mapped character, and not the representative number.
+- And you can use single quotes and a character literal to assign a value to a char which is much simpler than looking up the representative number.
+
 
 
 
