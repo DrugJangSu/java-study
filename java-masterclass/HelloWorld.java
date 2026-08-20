@@ -1220,6 +1220,15 @@ result ==> 5
 // The remainder operator returns the remaining value from a division operation.
 // If there is no remaining value the result is 0.
 
+// The following is some examples.
+(Result) => (Remainder Result) => (Explanation)
+10 / 5 = 2 => 10 % 5 = 0 => Ten can be divided evenly by 5, so there is no remainder.
+10 / 2 = 5 => 20 % 2 = 0 => Ten can be divided evenly by 2, so there is no remainder.
+10 / 3 = 3 => 10 % 3 = 1 => Ten cannot be devided evenly by 3, but we get a 3 from the division which gives us 9 with 1 remaining.
+10 / 1 = 10 => 10 % 1 = 0 => Using 1 on the right side of the remainder operate will always give a result of 0.
+
+
+
 
 
 */
