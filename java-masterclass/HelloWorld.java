@@ -1163,6 +1163,13 @@ jshell> int result = 1 + 2; // 1 + 2 = 3
 result ==> 3
 // There's two - the equal operator and the plus operator.
 
+/// What is a Comment?
+// Comments are ignored by the computer and are added to a program to help describe something. Comments are there for humans to read.
+// We use two forward slashes in front of any code or on a blank line. Anything after the two forward slashes right through to the end of the line is ignored by the computer.
+
+
+
+
 
 
 
