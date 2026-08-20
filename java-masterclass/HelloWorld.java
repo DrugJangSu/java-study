@@ -1201,6 +1201,9 @@ jshell> System.out.print(firstChar + secondChar);
 // When you use the addition operator with chars it is these numbers in memory that get added together.
 // The character values don't get concatenated.
 
+// Solution
+jshell> System.out.print("" + firstChar + secondChar);
+AB <= changed into a string because of concatenation
 
 
 
