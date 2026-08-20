@@ -1391,5 +1391,35 @@ result -= 5.5;
 was actually
 result = (int) (result - 5.5);
 
+jshell> {
+   ...>     double result = 10;
+   ...>     result -= 5.5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 4.5
+
+jshell> {
+   ...>     double result = 10;
+   ...>     result *= 1.5; // (also for times)
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 15.0
+
+jshell> {
+   ...>     double result = 10;
+   ...>     result /= 1.5; // (also for division)
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 6.666666666666667
+
+/// Summing up the abbreviating Operators
+(Shorthand Operator) => (Code Sample)
+Post-fix Increment Operator => result++;
+Post-fix Decrement Operator => result--;
+Addition Compound Assignment => result += 5;
+Subtraction Compound Assignment => result -= 5;
+Multiplication Compound Assignment => result *= 5;
+Division Compound Assignment => result /= 5;
+
 
 */ 
