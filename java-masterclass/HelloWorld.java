@@ -1421,5 +1421,61 @@ Subtraction Compound Assignment => result -= 5;
 Multiplication Compound Assignment => result *= 5;
 Division Compound Assignment => result /= 5;
 
+/// 이번 챕터 요약 -----------------------------
+/// 증감 연산자 (++, --)와 복합 대입 연산자(+=, -=, *=, /=), 그리고 그 속에 숨겨진 자동 형변환(Implicit Casting)
+/// 단축 연산자 종류 요약
+// 증가(Increment)
+    ++
+    result++;
+    result = result + 1;
+// 감소(Decrement)
+    --
+    result--;
+    result = result - 1;
+
+// 복합 덧셈
+    +=
+    result += 5;
+    result = result + 5;
+
+// 복합 뺄셈
+    -=
+    result -= 5;
+    result = result - 5;
+
+// 복함 곱셈
+    *=
+    result *= 5;
+    result = result * 5;
+
+// 복합 나눗셈
+    /=
+    result /= 5;
+    result = result / 5;
+
+
+
+/// 복합 대입 연산자의 비밀(Compound Assignment)
+result += 5;   // result = result + 5;
+result -= 3;   // result = result - 3;
+result *= 2;   // result = result * 2;
+result /= 4;   // result = result / 4;
+// 복합 대입 언산자는 코드를 줄여 주어 편리하지만 변수 타입과 다른 소수점 연산을 할 때 자바가 알아서 형변환을 하여 소수점 데이터를 잘라버리는 상황이 생김
+
+
+/// 암묵적 형변환(Implicit Casting)
+복합 대입 연산자에는 자동 형변환이 숨어 있음
+int result = 10;
+result -= 5.5;          // 에러 없이 실행됨
+실제로 자바가 이렇게 처리:
+result = (int) (result - 5.5);   // 소수점을 강제로 버림
+반면 일반 대입을 쓰면 에러 발생
+result = result - 5.5;   // double을 int에 넣을 수 없음
+
+result -= 5.5; → 자동으로 (int) 형변환이 일어남
+그래서 에러는 안 나지만 소수점이  Truncate(잘림)
+정확한 계산이 필요하면 double 타입을 사용하는 것이 좋음
 
 */ 
+///// Section 4 : Transitioning from Jshell to IntelliJ IDEA : A Comprehensive IDE Guide --------------
+//// Embracing the Power of an Integrated Development Environment
