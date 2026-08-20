@@ -1190,6 +1190,18 @@ previousResult = 3
 - Literal enclosed in Double Quotes
 
 
+/// The + Operator on char
+jshell> char firstChar = 'A'; char secondChar = 'B';
+firstChar ==> 'A'
+secondChar ==> 'B'
+jshell> System.out.print(firstChar + secondChar);
+131 <= Why??
+
+// Chars are stored as 2 byte numbers in memory.
+// When you use the addition operator with chars it is these numbers in memory that get added together.
+// The character values don't get concatenated.
+
+
 
 
 
