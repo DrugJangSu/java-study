@@ -1290,7 +1290,21 @@ Obviously we can do the following; result = result + 1;
 Post-fix Increment Operator => result++;
 Compound Assignment Operator with + sign => result += 1;
 
+jshell> {
+   ...>     int result = 1;
+   ...>     result ++; // <== Appreviating operator
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 2
 
 
+/// Decrementing by One
+// Decrementing by one is also very common
+// We can decrement simply by using the equation;
+ex) result = result - 1;
+But other two other shorthand ways to do the same thing;
+(Shorthand (or Abbreviating) Operator) => (Code Sample)
+Post-fix Decrement Operator => result--;
+Compound Assignment Operator with - sign => result -= 1;
 
 */ 
