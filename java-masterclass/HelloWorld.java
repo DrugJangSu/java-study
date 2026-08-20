@@ -1168,11 +1168,26 @@ result ==> 3
 // We use two forward slashes in front of any code or on a blank line. Anything after the two forward slashes right through to the end of the line is ignored by the computer.
 // So aside from describing something about a program, comments can also be used to temporarily disable code.
 
+/// What is the effect of this code on the value in previousResult?
 
+jshell> int previousResult = result;
+previousResult ==> 3
+jshell> result = result - 1; // 3 - 1 = 2
+result ==> 2
 
+// We assigned the result to previousResult, and then we changed the value of result. 
+jshell> System.out.print("previousResult = " + previousResult);
+previousResult = 3
+=> but it didn't affect the previousResult.
 
+/// The + Operator on character data types
+// char
+- Holds one, and only one character
+- Literal enclosed in Single Quotes
 
-
+// String
+- Can hold multiple characters
+- Literal enclosed in Double Quotes
 
 
 
