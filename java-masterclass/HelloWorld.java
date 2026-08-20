@@ -1166,6 +1166,8 @@ result ==> 3
 /// What is a Comment?
 // Comments are ignored by the computer and are added to a program to help describe something. Comments are there for humans to read.
 // We use two forward slashes in front of any code or on a blank line. Anything after the two forward slashes right through to the end of the line is ignored by the computer.
+// So aside from describing something about a program, comments can also be used to temporarily disable code.
+
 
 
 
