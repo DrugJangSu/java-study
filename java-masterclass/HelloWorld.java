@@ -1321,5 +1321,20 @@ jshell> {
    ...> }
 result = 0
 
+jshell> {
+   ...>     int result = 1;
+   ...>     result += 1; 
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 2
+
+jshell> {
+   ...>     int result = 1;
+   ...>     result += 5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 6
+
+
 
 */ 
