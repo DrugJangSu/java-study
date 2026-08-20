@@ -1356,6 +1356,40 @@ jshell> {
    ...> }
 result = 3
 
+/// Compound Operator Assignment
+// When result is an int the compound operator give a different result from the actual expected output.
+
+jshell> {
+   ...>     int result = 10;
+   ...>     result -= 5.5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 4
+
+jshell> {
+   ...>     int result = 10;
+   ...>     result = result - 5.5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+|  Error:
+|  incompatible types: possible lossy conversion from double to int
+|      result = result - 5.5;
+|               ^----------^
+jshell> {
+   ...>     int result = 10;
+   ...>     result = (int) (result - 5.5);
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 4
+
+// The compound assignment operator x -= y, is often said to be x = x - y, but that's not entirely true if y is not the same data type as x.
+// x -= y is really x = (data type of x) (x - y)
+-> An implicit cast is done when using this operator so no error occurs, but unexpected results may happen.
+
+// to sum up
+result -= 5.5;
+was actually
+result = (int) (result - 5.5);
 
 
 */ 
