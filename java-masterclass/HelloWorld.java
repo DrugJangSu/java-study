@@ -1244,6 +1244,8 @@ result ==> 2
 
 // Because the char is stored as a whole number literal, all the operations are applicable to a char.
 
+/// 이번챕터 정리 ----------------
+/// 자바의 연산 매커니즘인 연산자, 피연산자, 표현식의 개념과 char 타입의 특이한 연산 방식, 그리고 나머지 연산자(%)의 활용법
 
 
 
@@ -1251,3 +1253,5 @@ result ==> 2
 
 
 */
+//// Simplifying Java Code : Using Abbreviated Operators for Concise Operations ---------------------------------------------------------------
+/// 
