@@ -1270,6 +1270,25 @@ ex) 'A' + 'B' = 131 (유니코드 65 + 66)
 /*
 /// Abbreviating Operators
 
+/// Why do we want to use multiple statements in curly braces {}?
+// It's a way to group statements together before executing them
+// It allows to put statements on multiple lines which is more natural and readable
+// We can execute the group of statements as a whole, which more closely resembles running code in Java.
+
+jshell> {
+   ...>     int result = 1;
+   ...>     result = result + 1;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 2
+
+/// Incrementing by One
+// Incrementing by one is a very common requirement in programming
+Obviously we can do the following; result = result + 1;
+// But we also have two other shorthand ways to do the same thing.
+(Shorthand (or Abbreviating) Operator) => (Code Sample)
+Post-fix Increment Operator => result++;
+Compound Assignment Operator with + sign => result += 1;
 
 
 
