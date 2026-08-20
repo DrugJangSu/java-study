@@ -1292,7 +1292,7 @@ Compound Assignment Operator with + sign => result += 1;
 
 jshell> {
    ...>     int result = 1;
-   ...>     result ++; // <== Appreviating operator
+   ...>     result ++; // <== Post-fix Increment operator
    ...>     System.out.print("result = " + result);
    ...> }
 result = 2
@@ -1306,5 +1306,20 @@ But other two other shorthand ways to do the same thing;
 (Shorthand (or Abbreviating) Operator) => (Code Sample)
 Post-fix Decrement Operator => result--;
 Compound Assignment Operator with - sign => result -= 1;
+
+jshell> {
+   ...>     int result = 1;
+   ...>     result --; // <== Post-fix Decrement Operator
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 0
+
+jshell> {
+   ...>     int result = 1;
+   ...>     result -= 1; // <= Compound Assignment Operator 
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 0
+
 
 */ 
