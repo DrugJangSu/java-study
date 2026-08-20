@@ -1226,6 +1226,25 @@ result ==> 5
 10 / 2 = 5 => 20 % 2 = 0 => Ten can be divided evenly by 2, so there is no remainder.
 10 / 3 = 3 => 10 % 3 = 1 => Ten cannot be devided evenly by 3, but we get a 3 from the division which gives us 9 with 1 remaining.
 10 / 1 = 10 => 10 % 1 = 0 => Using 1 on the right side of the remainder operate will always give a result of 0.
+ex)
+jshell> result = 5;
+result ==> 5
+jshell> result = result % 3; // the remainder of (5 % 3) = 2
+result ==> 2
+
+
+/// Summary of Operators
+// All five operators
+(Operator) => (Numeric types) => (char) => (boolean) => (String)
++ => Addition => Addition => n/a => Concatenation
+- => Subtraction => Subtraction => n/a => n/a
+* => Multiplication => Multiplication => n/a => n/a
+/ => Division => Division => n/a => n/a
+% => Remainder(Modulus) => Remainder(Modulus) => n/a => n/a
+
+// Because the char is stored as a whole number literal, all the operations are applicable to a char.
+
+
 
 
 
