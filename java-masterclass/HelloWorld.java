@@ -1150,6 +1150,22 @@ In the line above byteValue, shortValue and intValue are operands as are the num
 // An expression is formed by combining variables, literals, method return values and operators.
 They are a way of forming combining those values to produce a result.
 
+In the line below 15 plus 12 is the expression which returns the value of 27.
+ex) int myVar = 15 + 12;
+
+In the statement below byteValue + shortValue + intValue is the expression.
+ex) int sumOfThree = byteValue + shortValue + intValue;
+
+
+/// How many operators are in this code?
+ex)
+jshell> int result = 1 + 2; // 1 + 2 = 3
+result ==> 3
+// There's two - the equal operator and the plus operator.
+
+
+
+
 
 
 
