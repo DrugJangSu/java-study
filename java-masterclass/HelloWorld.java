@@ -1124,7 +1124,22 @@ StringBuilder : 가변(Mutable), 객체의 내용을 변경하는 메서드를 �
 
 //// Mastering Operators, Operands, and Expressions in Java Programming ---------------------------------------------------------------
 /*
- 
+/// Operators, Operands and Expressions
+/// 
+/// What are Operators?
+// Operators in Java are special symbols that perform specific operations on one, two, or three operands, and then return a result.
+
+// In the example below we used the addition operator, as well as the multiplication operator.
+ex) long longTotal = 50000L + 19L * (byteValue + shortValue + intValue);
+But there are many other operators in Java.
+
+/// What are Operands?
+// An operand is a term used to describe any object that is manipulated by an operator.
+
+ex) int myVar 15 + 12;
+In the example the plus here is the operator, and 15 and 12 are operands. Variables used instead of literals can also be operands.
+
+
 
 
 */
