@@ -1330,10 +1330,31 @@ result = 2
 
 jshell> {
    ...>     int result = 1;
-   ...>     result += 5;
+   ...>     result += 5; <= we can decremate or incremate any number
    ...>     System.out.print("result = " + result);
    ...> }
 result = 6
+
+/// Quick Challenge
+// Initialise an int variable named result to the value of 10 rather than 1.
+// Next use the compound assignment operator with the minus sign to subtract a number from result using a value of your choice.
+// Print the result out using the System.out.print statement.
+
+// My answer
+jshell> {
+   ...>     int result = 10;
+   ...>     result -= 4;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 6
+
+// Tim's answer
+jshell> {
+   ...>     int result = 10;
+   ...>     result -= 7;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 3
 
 
 
