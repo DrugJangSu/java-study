@@ -1205,6 +1205,20 @@ jshell> System.out.print(firstChar + secondChar);
 jshell> System.out.print("" + firstChar + secondChar);
 AB <= changed into a string because of concatenation
 
+jshell> result = 2;
+result ==> 2
+
+jshell> result = result * 10; // 2 * 10 = 20
+result ==> 20
+
+jshell> result = result / 4; // 20 / 4 = 5
+result ==> 5
+
+/// The Remainder Operator
+// The remainder operator is represented ibn Java by the % sign.
+// The remainder operator goes by several other names : modulus, modulo or just plain mod for short.
+// The remainder operator returns the remaining value from a division operation.
+// If there is no remaining value the result is 0.
 
 
 
