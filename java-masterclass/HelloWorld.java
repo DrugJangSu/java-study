@@ -1145,4 +1145,12 @@ ex2)
 long longTotal = 50000L + 19L * (byteValue + shortValue + intValue);
 In the line above byteValue, shortValue and intValue are operands as are the numeric literals.
 
+
+/// What are Expressions?
+// An expression is formed by combining variables, literals, method return values and operators.
+They are a way of forming combining those values to produce a result.
+
+
+
+
 */
