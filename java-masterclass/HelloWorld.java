@@ -1495,6 +1495,12 @@ IntelliJ IDEA is one of several IDEs available for Java.
 It's also written in Java developed by JetBrains and simply known as IntelliJ.
 JetBrains offer a free and open source community edition.
 
+//// What is an IDE?
+/// IDE?
+// IDE stands for Integrated Development Environment
+And IDE is a program that provides comprehensive facilities to programmers for software development. Think of it as a "Swiss Army Knife" for coding.
+
+
 
 
 
