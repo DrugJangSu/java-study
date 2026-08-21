@@ -1500,6 +1500,26 @@ JetBrains offer a free and open source community edition.
 // IDE stands for Integrated Development Environment
 And IDE is a program that provides comprehensive facilities to programmers for software development. Think of it as a "Swiss Army Knife" for coding.
 
+/// Key features of an IDE
+// Key Features of an IDE
+- Code Editor : Write an edit your code with syntax highlighting and auto-completion.
+- Debugger : Find and fix errors in your code step-by-step
+- Compiler/Interpreter : Run your code directly from the IDE
+- Code Navigation : Quickly jump to functions, classes and files.
+- Intelligent Code Assistance - Get suggestions, warnings, and automatic fixes.
+
+// Why use an IDE??
+- Productivity : Write code faster with smart suggestions.
+- Error Detection : Catch mistakes before running your code
+- Easy Debugging : Step through code to understand what's happening.
+- All-in-one : Everything you need in one place.
+
+/// Some popular IDEs
+// Java IDEs
+- IntelliJ IDEA : Full-featured programmer's IDE by JetBrains. Supports development in : Java, Python, Kotlin, Ruby, TypeScript, GO, HTML, and more.
+- Eclipse : An open-source Java IDE, released as an alternative to NetBeans. Very mature and full-featured.
+- Visual Studio code (VS CODE) : VS Code can be used for Java development after installing an extension pack for Java.
+- BlueJ : A Java IDE designed for beginners, used in education but also very capable for real projects.
 
 
 
