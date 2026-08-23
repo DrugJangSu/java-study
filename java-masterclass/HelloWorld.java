@@ -1480,7 +1480,7 @@ result -= 5.5; → 자동으로 (int) 형변환이 일어남
 ///// Section 4 : Transitioning from Jshell to IntelliJ IDEA : A Comprehensive IDE Guide --------------
 
 /*
-//// Embracing the Power of an Integrated Development Environment
+//// Embracing the Power of an Integrated Development Environment ---------------------------------------------------------------
 /// Why do we need an Integrated Development Environment (IDE)?
 // An IDE is the easiest least error-prone way to develop, manage and deploy Java classes. It provides many benefits to developers including:
     - Increased productivity
@@ -1523,6 +1523,8 @@ And IDE is a program that provides comprehensive facilities to programmers for s
 
 
 /// IntelliJ IDEA is recommended for this course.
+
+//// Creating Your First IntelliJ Project - "Hello World" Java Code Implementation ---------------------------------------------------------------
 
 
 
