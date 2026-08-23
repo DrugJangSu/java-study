@@ -1534,5 +1534,6 @@ Class Name => Java element => Upper Camel Case => NewClass
 Method Name => Java element => Lower Camel Case => getData
 Variable Name => Java element => Lower Camel Case => firstVariable
 
+// It's best to avoid spaces in the project name and best use upperCamelcase.
 
 */
