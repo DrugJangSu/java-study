@@ -1568,6 +1568,19 @@ We'll be using a special method called the main method, that Java looks for when
 It's the entry point for any Java code, and Java looks for this main method to start and run the program.
 You can also create your own methods.
 
+/// First IntelliJ Challenge
+Instead of printing "Hello World", print "Hello Tim" or Hello whatever you first name is.
+// My Answer
+public class FirstClass {
+    public static void main(String[] args) {
+        System.out.print("Hello, Tim");
+    }
+}
 
+public class FirstClass {
+    public static void main(String[] args) {
+        System.out.print("Hello, Jong Hyun");
+    }
+}
 
 */
