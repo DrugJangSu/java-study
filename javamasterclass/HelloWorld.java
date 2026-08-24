@@ -1616,6 +1616,26 @@ This is known as conditional logic.
 /// Conditional Logic
 Conditional logic uses specific statements in Java to allow us to check a condition, and execute certain code based on whether that condition (the expression) is true or false.
 
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, Tim");
+        boolean isAlien = false; // <==== assignment operator(=)
+        if (isAlien == false)
+            System.out.println("It is not an alien!");
+    }
+}
+
+/// Assignment Operator (=)
+The assignment operator assigns the value of an expresion, to the variable to the left of the operator.
+ex) boolean isAlien = false;
+
+So isAlien is the variable in this case, and it's been set to false which is the value of the expression.
+
+/// Equality Operator (==)
+The equality operator tests to see if two operands are considered equal, and returns a boolean value.
+ex) if (isAlien == false) {}
+So here is Alien is being tested against the value false.
+
 
 
 
