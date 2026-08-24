@@ -1543,5 +1543,27 @@ public class FirstClass {
     }
 }
 
+//// Understanding IntelliJ Code Structure : Classes, Methods, and Basic Java Syntax ---------------------------------------------------------------
+
+
+/// Access Modifiers
+The public Java keyword is what's called an access modifier.
+An access modifier allows us to define which parts of our code, or even someone else's code can access a particular elenemt.
+
+ex) public access modifier
+public class FirstClass {
+    public static void main(String[] args) {
+        System.out.print("Hello World");
+    }
+}
+/// Class Keyword
+The class keyword is used to define a class. The class name will be the text following the keyword, so FirstClass in this case.
+Notice the left and curly braces, they are used to define the class code block, or class body.
+ex) class FirstClass {
+}
+
+
+
+
 
 */
