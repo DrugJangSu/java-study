@@ -1636,9 +1636,95 @@ The equality operator tests to see if two operands are considered equal, and ret
 ex) if (isAlien == false) {}
 So here is Alien is being tested against the value false.
 
+// extra
+public class Hello {
 
+    public static void main(String[] args) {
+        System.out.println("Hello, Tim");
 
+        boolean isAlien = false;
+        if (isAlien == true); // <= if you put a semicolon here, despite the if statement being false the next line will be executed. removing the semicolon will let the code function
+            System.out.println("It is not an alien!");
 
+    }
+}
+// One of the disadvantages of using the if-then statement without a code block is that it's not immediately clear what the code is doing.
+ex)
+public class Hello {
 
+    public static void main(String[] args) {
+        System.out.println("Hello, Tim");
+
+        boolean isAlien = true; // assignment operator(=)
+        if (isAlien == false)
+            System.out.println("It is not an alien!");
+            System.out.println("And I am scared of aliens");
+    }
+}
+// The second print statement gets printed out. The reason for that is without the code block, only the line immediately following the if-then statement is executed.
+// All subsequent lines are not considered to be part of the if-then statement.
+// The way we deal with this issue is we add a code block which is a better approach.
+
+/// Best Practice Rule - Always use a Code Block for If-Then statements.
+ex)
+boolean isAlien = true;
+if (isAlien == false)
+    System.out.println("It is not an alien!");
+    System.out.println("And I am scared of aliens");
+=> Instead of using the if statement as we can see here, we should instead use a code block.
+
+/// The Code Block
+// A code block allows more than one statement to be executed- in other words a block of code.
+The format is:
+if (expression) {
+    // put one or more statements here
+}
+=> If the expression is true, the code block will be executed. If the expression is false, all code inside the block will be ignored.
+
+ex)
+boolean isAlien = false;
+if (isAlien == false) {
+    System.out.println("It is not an alien!");
+    System.out.println("And I am scared of aliens");
+}
+
+/// 지금까지의 섹션 요약 -----------------------------------------------------------------------
+/// 자바 식별자 명명 규칙 (Naming Conventions)
+단어의 첫 글자를 대문자로 처리하는 카멜 케이스(Camel Case) 방식을 사용하며, 프로젝트 이름에 공백은 피하는 것이 좋음
+    Project Name => Upper Camel Case(Pascal) => 첫 글자 대문자 => FirstJavaProject
+    Class Name => Upper Camel Case (Pascal) => 첫 글자 대문자 => FirstClass, SecondClass
+    Method Name => Lower Camel Case => 첫 글자 소문자 이후 대문자 => getData() main()
+    Variable Name => Lower Camel Case => 첫 글자 소문자 이후 대문자 => isAlien, myFirstVariable
+
+/// 자바 기본 코드 구조 및 출력 방식
+    public (접근 제어자) : 해당 클래스나 메서드에 접근할 수 있는 범위를 지정함
+    class 키워드 : 자바 프로그램의 기본 단위인 클래스를 정의하며, 실제 코드는 중괄호 {} 코드 블록 안에 작성함
+    main 메서드 : 자바 프로그램이 실행될 때 컴파일러가 가장 먼저 찾는 프로그램의 시작점 (Entry Point)
+    System.out.print() vs System.out.println():
+        print() : 입력한 내용을 출력하고 줄바꿈을 하지 않음
+        Println() : 입력한 내용을 출력한 뒤 자동으로 줄바꿈(Enter)을 추가함.
+
+/// 조건문 (if-then)과 연산자 구분
+    대입 연산자 (=) : 우변의 값을 좌변의 변수에 젖앙함 (boolean isAlien = false;)
+    동등 비교 연산자 (==) : 두 피연산자의 값이 같은지 비교하여 true 또는 false를 반환함 (if (isAlien == false))
+
+/// if-then 작성 시 주의해야 할 2가지 함정과 해결책
+    함정 1 : if 문 뒤의 세미콜론 (;) 실수
+        if (isAlien == true); 처럼 if 조건절 바로 뒤에 세미콜론을 붙이면 조건문의 실행이 그곳에서 끝남. 이 경우 조건문의 참 거짓 여부와 상관없이 다음 줄의 코드가 무조건 실행됨.
+
+    함정 2 : 중괄호 {} 생략 시 한 줄만 제어
+        중괄호 없이 if 문을 작성하면 바로 다음 첫번째 문장만 조건문 내부 코드로 인식함. 그 아래에 있는 두번째 문장부터는 조건문과 상관없이 항상 실행됨.
+
+  =>모범 답안 (Best Practice) : 항상 코드 블록 {}을 사용하기
+    문장이 한 줄이어도 if 문에는 항상 중괄호 {}를 사용하는 것이 가독성을 높이고 의도치 않은 버그를 방지하는 자바의 표준 규칙
+
+    ex)
+    boolean isAlien = false;
+    if (isAlien == false) {
+        System.out.println("It is not an alien!");
+        System.out.println("And I am scared of aliens");
+    }
+
+//// Advabnced conditional Logic : Implementing the Logical AND Operator in Java Code ---------------------------------------------------------------
 
 */
