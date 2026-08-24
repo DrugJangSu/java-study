@@ -1607,8 +1607,18 @@ public class Hello {
 }
 
 
-
 //// Mastering Java's if-then Statement : Conditional Logic for Program Flow Control ---------------------------------------------------------------
+
+/// if-then Statement
+The if-then statement is the most basic of all the control flow statements. It tells your program to execute a certain section of code, only if a particular test evaluates to true.
+This is known as conditional logic.
+
+/// Conditional Logic
+Conditional logic uses specific statements in Java to allow us to check a condition, and execute certain code based on whether that condition (the expression) is true or false.
+
+
+
+
 
 
 */
