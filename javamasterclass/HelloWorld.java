@@ -1699,7 +1699,7 @@ if (isAlien == false) {
 /// 자바 기본 코드 구조 및 출력 방식
     public (접근 제어자) : 해당 클래스나 메서드에 접근할 수 있는 범위를 지정함
     class 키워드 : 자바 프로그램의 기본 단위인 클래스를 정의하며, 실제 코드는 중괄호 {} 코드 블록 안에 작성함
-    main 메서드 : 자바 프로그램이 실행될 때 컴파일러가 가장 먼저 찾는 프로그램의 시작점 (Entry Point)
+    main 메서드 : 자바 프로그램이 실행될 때 컴파일러가 가장 먼저 찾는 프로그램의 시작점 (Entry Point) => main 메서드는 자바 프로그램이 실행될 때 JVM이 가장 먼저 찾아서 실행하는 특별한 메서드임. (이 메서드가 없으면 프로그램이 시작되지 않음)
     System.out.print() vs System.out.println():
         print() : 입력한 내용을 출력하고 줄바꿈을 하지 않음
         Println() : 입력한 내용을 출력한 뒤 자동으로 줄바꿈(Enter)을 추가함.
@@ -1724,6 +1724,15 @@ if (isAlien == false) {
         System.out.println("It is not an alien!");
         System.out.println("And I am scared of aliens");
     }
+
+// 참고로 if문에서 ==false 대신 ! 사용 가능
+실제로는 다음과 같이 사용 가능:
+    ex)
+    if (!isAlien) {     // <= (isAlien == false) 와 동일함
+    System.out.println("It is not an alien!");
+    }
+
+
 
 //// Advabnced conditional Logic : Implementing the Logical AND Operator in Java Code ---------------------------------------------------------------
 
