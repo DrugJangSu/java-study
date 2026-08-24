@@ -1582,5 +1582,33 @@ public class FirstClass {
         System.out.print("Hello, Jong Hyun");
     }
 }
+package javamasterclass.section4.HelloWorld.src;
+
+public class SecondClass {
+    public static void main(String[] args) {
+        System.out.print("Hello, Jong Hyun");
+    }
+}
+
+public class Hello {
+
+    public static void main(String[] args) {
+        System.out.print("Hello, Tim");
+        System.out.print("Hello World");
+    }
+}
+
+public class Hello {
+
+    public static void main(String[] args) {
+        System.out.println("Hello, Tim"); <== the println will add a blank line after printing the text.
+        System.out.print("Hello World");
+    }
+}
+
+
+
+//// Mastering Java's if-then Statement : Conditional Logic for Program Flow Control ---------------------------------------------------------------
+
 
 */
