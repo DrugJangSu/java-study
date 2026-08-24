@@ -1536,4 +1536,12 @@ Variable Name => Java element => Lower Camel Case => firstVariable
 
 // It's best to avoid spaces in the project name and best use upperCamelcase.
 
+
+public class FirstClass {
+    public static void main(String[] args) {
+        System.out.print("Hello World");
+    }
+}
+
+
 */
