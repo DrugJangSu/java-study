@@ -1562,7 +1562,11 @@ Notice the left and curly braces, they are used to define the class code block, 
 ex) class FirstClass {
 }
 
-
+/// What is a Method
+A method is a collection of statements, one or more, that perform an operation.
+We'll be using a special method called the main method, that Java looks for when running a program.
+It's the entry point for any Java code, and Java looks for this main method to start and run the program.
+You can also create your own methods.
 
 
 
