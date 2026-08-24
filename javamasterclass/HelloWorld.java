@@ -1734,6 +1734,6 @@ if (isAlien == false) {
 
 
 
-//// Advabnced conditional Logic : Implementing the Logical AND Operator in Java Code ---------------------------------------------------------------
+//// Advanced conditional Logic : Implementing the Logical AND Operator in Java Code ---------------------------------------------------------------
 
 */
