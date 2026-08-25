@@ -1809,5 +1809,44 @@ if ((topScore > 90) || (secondTopScore <= 90)) { // <= True
     System.out.println("Either or both of the conditions are true.");
 
 
+//// Assignment vs Equality : Avoiding Common Java Operator Errors in IntelliJ ---------------------------------------------------------------
+/// Difference Between the Assignment and Equal to Operator
+/// Challenge : Find out why the following code will create an error.
+int newValue = 50;
+if (newValue = 50) {
+    System.out.println("This is an error.");
+}
+// error => java : incompatible types : int cannot be converted to boolean
+
+// My answer
+My thoughts of correcting the code is the following;
+int newValue = 50;
+if (newValue == 50) {
+    System.out.println("This is an error.");
+}
+// The reason for it that newValue is an int in which you cannot change it into a boolean. So we should put the == to check if it's equal or not(boolean)
+
+// Tim's answer
+int newValue = 50;
+if (newValue == 50) {
+    System.out.println("This is true.");
+}
+
+/// Another Challenge
+// Will the following code work?
+boolean isCar = false;
+if (isCar = true) {
+    System.out.println("This is not supposed to happen.");
+}
+// My answer : no...?
+// Tim's answer
+It's assigning the value true to "isCar" and then returning the boolean value to true.
+//so... the fixed code will be like below
+boolean isCar = false;
+if (isCar == true) {
+    System.out.println("This is not supposed to happen.");
+}
+
+
 
 */
