@@ -1944,9 +1944,81 @@ ex)
 
 //// Streamlining Code : Implementing Java's Ternary Operator for Concise Conditionals  ---------------------------------------------------------------
 /// Ternary Operator
+// The ternary operator has three operands. It's the only operator currently in java that does have three.
+// Officially Java calls it the conditional operator.
+    The structure of this operator is:
+    ex)
+    operand1 ? operand2 : operand
+
+String makeOfCar = "Volkswagen";
+boolean isDomestic = makeOfCar == "Volkswagen" ? false : true;
+if (isDomestic) {
+    System.out.println("This car is domestic to our country.");
+}
+=> this would not print anything.
+
+// The ternary operator(? :) is a shortcut to assigning one or two values to a variable, depending on a given condition.
+    So think of it as a shortcut of the if-then-else statement.
+
+    ex)
+    int ageOfClient = 20;
+    String ageText = ageOfClient >= 18 ? "Over Eighteen" : "Still a kid";
+    System.out.println("Our client is" +  ageText);
+
+    => Operand one - ageOfClient >= 18 in this case is the condition we're checkibng. It needs to return true or false.
+    => Operand two - "Over Eighteen" is the value to assign to the variable ageText, if the condition above is true.
+    => Operand three - "Still a kid" is the value to assign to the variable ageText if the condition above is false.
+
+    ex)
+    String ageText = (ageOfClient >= 18) ? "Over Eighteen" : "Still a kid";
+
+    boolean isDomestic = makeOfCar == "Volkswagen" ? false : true;
+        => although you can write a simplier code for this example.
+            boolean isDomestic = (makeOfCar != "Volkswagen");
+
+ex)
+String makeOfCar = "Volkswagen";
+boolean isDomestic = makeOfCar == "Volkswagen" ? false : true;
+if (isDomestic) {
+    System.out.println("This car is domestic to our country.");
+}
+String s = (isDomestic) ? "This car is domestic" : "This car is not domestic";
+System.out.println(s);
+
+/// 이번챕터 요약 정리 --------------------------------------------------------
+// 삼향 연산자 (Ternary Operator)
+자바에서 유일하게 피연산자가 3개인 연산자.
+공식 명칭은 Conditional Operator (조건 연산자).
+
+-> 기본 구조
+    (조건) ? (참일 때 값) : (거짓일 때 값)
+    - 첫번째 : 조건 (true or false가 나와야 함)
+    - 두번째 : 조건이 참일 때 나오는 값
+    - 세번째 : 조건이 거짓일 때 나오는 값
+
+// if-else와의 비교
+    / 기존 방식
+    ex)
+    int ageOfClient = 20;
+    String ageText;
+    if (ageOfClient >= 18) {
+        ageText = "Over Eighteen";
+    } else {
+        ageText = "Still a kid";
+    }
+
+    / 삼향 연산자 방식 (훨씬 간결함)
+    String ageText (ageOfClient >= 18) ? "Over Eighteen" : "Still a kid";
+
+// 다른예시
+String makeOfCar = "Volkswagen";
+boolean isDomestic = makeOfCar == "Volkswagen" ? false : true;
+
+    더 간단한 방식 (굳이 삼향연산자를 안써도 되는 상황)
+    boolean isDomestic = (makeOfCar != "Volkswagen");
 
 
-
+//// Java Operator Precedence : Mastering Expression Evaulation and Challenge ---------------------------------------------------------------
 
 
 */
