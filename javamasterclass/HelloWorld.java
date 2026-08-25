@@ -1767,11 +1767,20 @@ if (topScore <= 100) { // <= True
 }
 
 int secondTopScore = 60;
-if (topScore > secondTopScore && topScore < 100) {
+if (topScore > secondTopScore && topScore < 100) { // <= True
     System.out.println("Greater than second top score and less than 100.");
 }
 
+ex)
+int topScore = 80;
+if (topScore < 100) { // <= True
+    System.out.println("You got the high score!");
+}
+int secondTopScore = 81;
+if (topScore > secondTopScore && topScore < 100) { // <= False
+    System.out.println("Greater than second top score and less than 100.");
+}
 
-
+//// Java's Logical OR Operator : Enhancing Conditional Statements for Flexible Code ---------------------------------------------------------------
 
 */
