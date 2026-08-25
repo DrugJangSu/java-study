@@ -1870,6 +1870,53 @@ ex)
     if (!isCar) {}
 // If we use the NOT operator, we are testing for the opposite value of the car variable. We assigned isCar on the previous line to be false, so !isCar will return true.
 
+// Recommend using the abbreviated form if your variables are booleans for the following reasons;
+    - It's much harder to identify the error if you accidentally use an assignment operator.
+        -> IntelliJ won't flag this as an error when you're testing a boolean variable so the only way you'll know you made this common mistake is by discovering your program or output isn't what you expected.
+    - The code is more concise, and more concise code can often be more readable and understandable.
 
+/// 잠시 요약 정리 ----------------------------------------
+/// 고급 조건문 & 논리 연산자 정리
+
+// 비교 연산자
+== 같다
+!= 다르다
+>, >= 크다, 크거나 같다
+<, <= 작다, 작거나 같다
+
+// 논리 연산자 (AND, OR)
+&& (Logical AND) : "그리고"
+    둘다 true여야 전체가 true
+    ex)
+        if (topScore > secondTopScore && topScore < 100) {
+            // 두 조건이 모두 참일 때만 실행됨
+        }
+|| (Logical OR) : "또는"
+    하나라도 true면 전체가 true
+    ex)
+        if ((topScore > 90) || (secondTopScore <= 90)) {
+            // 둘 중 하나라도 참이면 실행
+        }
+    // 팁 : 조건을 괄호로 감싸주면 가독성이 높아짐
+
+// NOT 연산자(!) : "아니다"
+    boolean 값을 반대로 뒤집음
+    ex)
+        boolean isCar = false;
+        if (!isCar) { // isCar가 false일 때 실행 -> 즉 결과값은 True
+        System.out.println("This is not supposed to happen.")
+        }
+
+// = vs == : 흔한 실수
+    = 은 대입 연산자(값을 넣음)
+    ==은 동등 비교 연산자(값이 같은지 비교함)
+
+
+
+
+
+
+//// Streamlining Code : Implementing Java's Ternary Operator for Concise Conditionals  ---------------------------------------------------------------
+/// Ternary Operator
 
 */
