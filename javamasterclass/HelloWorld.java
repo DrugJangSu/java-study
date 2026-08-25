@@ -1865,6 +1865,11 @@ ex)
     if (isCar) {}
 // In the code above, we are testing if the value in isCar is true - while assigned it to be false.
 
+ex)
+    boolean isCar = false;
+    if (!isCar) {}
+// If we use the NOT operator, we are testing for the opposite value of the car variable. We assigned isCar on the previous line to be false, so !isCar will return true.
+
 
 
 */
