@@ -1736,4 +1736,42 @@ if (isAlien == false) {
 
 //// Advanced conditional Logic : Implementing the Logical AND Operator in Java Code ---------------------------------------------------------------
 
+int topScore = 100;
+if (topScore == 100) { // <= True
+    System.out.println("You got the high score!");
+}
+
+int topScore = 100;
+if (topScore != 100) { // <= False
+    System.out.println("You got the high score!");
+}
+
+int topScore = 100;
+if (topScore > 100) { // <= False
+    System.out.println("You got the high score!");
+}
+
+int topScore = 100;
+if (topScore >= 100) { // <= True
+    System.out.println("You got the high score!");
+}
+
+int topScore = 100;
+if (topScore < 100) { // <= False
+    System.out.println("You got the high score!");
+}
+
+int topScore = 100;
+if (topScore <= 100) { // <= True
+    System.out.println("You got the high score!");
+}
+
+int secondTopScore = 60;
+if (topScore > secondTopScore && topScore < 100) {
+    System.out.println("Greater than second top score and less than 100.");
+}
+
+
+
+
 */
