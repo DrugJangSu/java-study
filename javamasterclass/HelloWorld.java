@@ -1783,4 +1783,18 @@ if (topScore > secondTopScore && topScore < 100) { // <= False
 
 //// Java's Logical OR Operator : Enhancing Conditional Statements for Flexible Code ---------------------------------------------------------------
 
+int secondTopScore = 81;
+if ((topScore > secondTopScore) && (topScore < 100)) { <== Adding parentheses makes it easier to understand the code at a glance, plus not affecting the result.
+    System.out.println("Greater than second top score and less than 100.");
+}
+
+/// The Logical AND operator and the Logical OR operator
+// The "and" operator comes in two flavours in Java, as does the "or" operator.
+    && is the Logical and which operates on boolean operands - checking if a given condition is true or false.
+    The & is a bitwise operator working at the bit level.
+    Likewise || is the Logical "or" and again it operates on boolean operands - checking if a given condition is true or false.
+
+
+
+
 */
