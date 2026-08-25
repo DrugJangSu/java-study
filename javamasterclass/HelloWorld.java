@@ -1857,6 +1857,13 @@ if (!isCar) { // <== This also works.
     System.out.println("This is not supposed to happen.");
 }
 
+/// The NOT Operator
+// The exclamation mark (!) or NOT operator, is also known as the Logical Complement Operator.
+It can be used with a boolean variable to test for the opposite value.
+ex)
+    boolean isCar = false;
+    if (isCar) {}
+// In the code above, we are testing if the value in isCar is true - while assigned it to be false.
 
 
 
