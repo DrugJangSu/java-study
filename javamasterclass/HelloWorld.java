@@ -1847,6 +1847,17 @@ if (isCar == true) {
     System.out.println("This is not supposed to happen.");
 }
 
+boolean isCar = false;
+if (isCar == false) {
+    System.out.println("This is not supposed to happen.");
+}
+
+boolean isCar = false;
+if (!isCar) { // <== This also works.
+    System.out.println("This is not supposed to happen.");
+}
+
+
 
 
 */
