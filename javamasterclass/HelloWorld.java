@@ -1911,12 +1911,42 @@ ex)
     = 은 대입 연산자(값을 넣음)
     ==은 동등 비교 연산자(값이 같은지 비교함)
 
+    잘못된 예시(int)
+    int newValue = 50;
+    if (newValue = 50) {} // 에러 발생
+    => int를 boolean으로 변경 불가로 컴파일 에러
 
+    잘못된 예시(boolean)
+    boolean isCar = false;
+    if (isCar = true) {} // 에러는 나지 않음... 근데
+        -> isCar에 true를 대입해버리고 그 결과(true)를 if가 받아서 무조건 실행됨
+        -> IntelliJ도 에러를 안 잡아줘서 버그 발견이 어려움
 
+    위 코드를 올바르게 수정하면;
+    if (isCar == true) {}
+    또는...
+    if (isCar) {} // true 확인
+    if (!isCar) {} // false 확인
 
+    ==> 그냥 쉽게 말해서, if 조건문 안에서는 항상 == 또는 ! 사용할 것. (int 비교 제외 =, !=, <, > 등)
 
+(추가 설명)
+// &&와 ||에도 단축 평가(Short-circuit evaluation)가 존재함
+// &&
+    if (false && something) {
+        // 앞이 false면 뒤쪽은 확인하지 않음
+    }
+
+// ||
+    if (true || something) {
+        // 앞이 true면 뒤쪽은 확인하지 않음
+    }
 
 //// Streamlining Code : Implementing Java's Ternary Operator for Concise Conditionals  ---------------------------------------------------------------
 /// Ternary Operator
+
+
+
+
 
 */
