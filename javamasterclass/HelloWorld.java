@@ -2054,6 +2054,57 @@ if (!isNoRemainder) {
 /*
 // Java has 51 reserved words that are used for keywords in the application.
 (Check Oracle -> Chapter 3 . Lexical Structure -> 3.9 Keywords)
+ex)
+    abstract
+    assert
+    boolean
+    break
+    byte
+    case
+    catch
+    char
+    class
+    const
+    continue
+    default
+    do
+    double
+    else
+    enum
+    extends
+    final
+    finally
+    float
+    for
+    if
+    goto
+    implements
+    import
+    instanceof
+    int
+    interface
+    long
+    native
+    new
+    package
+    private
+    protected
+    public
+    return
+    short
+    static
+    strictfp
+    super
+    switch
+    synchronized
+    this
+    throw
+    throws
+    thransient
+    try
+    void
+    volatile
+    while
 
 
 */
