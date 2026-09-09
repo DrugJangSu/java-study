@@ -2205,6 +2205,10 @@ Looking at the code below, what parts are expressions?
 */
 //// Mastering Java Statements, Whitespace, and Code Organization ---------------------------
 /*
-
+public class FirstClass {
+    public static void main(String[] args) {
+        System.out.print("Hello World");
+    }
+}
 
 */
