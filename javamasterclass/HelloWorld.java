@@ -2052,6 +2052,9 @@ if (!isNoRemainder) {
 ///// Section 5 : Mastering Java Expressions, Statements, Code Blocks, And Method Overloading -----------------------
 //// Exploring Java Keywords And Understanding Expressions ---------------------------
 /*
+// Java has 51 reserved words that are used for keywords in the application.
+(Check Oracle -> Chapter 3 . Lexical Structure -> 3.9 Keywords)
+
 
 */
 
