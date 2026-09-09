@@ -2124,6 +2124,52 @@ ConTextualKeyword:
     with
     yield
 
+// true and false are not keywords, but rather boolean literals
+// null is not a keyword, but rather the null literal
+
+/// Java's Code Units
+Writing code is similar to writing a document. It consists of special hierarchical units, which together form a whole.
+These are:
+    The Expression - An expression computes to a single value.
+    The Statement - Statements are stand alone units of work.
+    Code Blocks - A code block is a set of zero, one, or more statments, usually grouped together in some way to achieve a single goal.
+
+ex)
+public class Main {
+
+    public static void main(String[] args) {
+        double kilometers = (100 * 1.609344);
+
+        int highScore = 50;
+
+        if(highScore > 25) {
+            highScore = 1000 + highScore; // add bonus points
+        }
+        int health = 100;
+
+        if ((health < 25) && (highScore > 1000)) {
+            highScore = highScore - 1000;
+        }
+    }
+}
+
+
+/// The Expression Challenge
+Looking at the code below, what parts are expressions?
+    int health = 100;
+    if ((health < 25) && (highScore > 1000)) {
+        highScore = highScore - 1000;
+    }
+
+// Tim's answer
+there are 6 expressions
+    health = 100
+    health < 25
+    highScore > 1000
+    (health < 25) && (highScore > 1000)
+    highScore - 1000
+    highScore = highScore - 1000
+
 
 
 */
