@@ -2170,6 +2170,36 @@ there are 6 expressions
     highScore - 1000
     highScore = highScore - 1000
 
+/// 정리 ---------------
+/// 자바 프로그램을 구성하는 기본 요소인 키워드(Keywords)와 코드를 이루는 3대 단위(표현식, 문장, 코드 블록)를 다루는 챕터
+// 자바 키워드(Keywords)와 리터럴 구분
+    예약어(Reserved Keywords) : public, class, int, if 등 자바 언어 자체어서 미리 용도를 정해둔 51개의 단어로, 변수나 메서드 이름으로 사용불가.
+    맥락 키워드(Contextual Keywords) : var, record, yield 처럼 특정 위치나 문맥에서만 키워드로 동작하는 단어.
+    키워드가 아닌 리터럴 : true, false, null은 키워드가 아닌 값 자체(literal)로 분류됨.
+
+// 자바 코드를 구성하는 3대 단위 (Code Units)
+    - 표현식(Expression) : 계산 결과가 하나의 값(Single Value)으로 떨어지는 코드 조각
+        ex) 100 * 1.609, health < 25
+    - 문장(Statement) : 독립적으로 실행 가능한 완결된 행동 단위 (보통 끝에 ;)
+        ex) double kilometers = (100 * 1.609344);
+    - 코드 블록(Code Block) : 중괄호 {}로 여러 문장을 묶어 하나의 목적을 수행하는 범위
+        ex) if (...) ( ... )
+
+// 챌린지 해설
+Looking at the code below, what parts are expressions?
+    int health = 100;
+    if ((health < 25) && (highScore > 1000)) {
+        highScore = highScore - 1000;
+    }
+// (풀이)
+    health = 100 : 변수에 값을 대입한 결과값 100을 만들어내는 대입 표현식
+    health < 25 : true 또는 false를 반환하는 비교 표현식
+    highScore > 1000 : true 또는 false를 반환하는 비교 표현식
+    (health < 25) && (highScore > 1000) : 두 조건의 논리 연산 결과 (true/false)를 만드는 논리 표현식
+    highScore - 1000 : 뺄셈 연산 결과값을 만들어내는 산술 표현식
+    highScore = highScore - 1000 : 계산된 최종 값을 다시 대입하는 대입 표현식
+
+    => 데이터 타입(int)이나 키워드(if), 세미콜론(;)을 제외하고 "결과적으로 어떤 값이 계산되어 나오는가"를 기준으로 나누면 표현식을 쉽게 찾을 수 있음.
 
 
 */
