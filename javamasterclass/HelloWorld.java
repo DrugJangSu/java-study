@@ -2055,6 +2055,7 @@ if (!isNoRemainder) {
 // Java has 51 reserved words that are used for keywords in the application.
 (Check Oracle -> Chapter 3 . Lexical Structure -> 3.9 Keywords)
 ex)
+ReservedKeyword:
     abstract
     assert
     boolean
@@ -2105,6 +2106,24 @@ ex)
     void
     volatile
     while
+ConTextualKeyword:
+    exports
+    module
+    non-sealed
+    open
+    opens
+    permits
+    provides
+    record
+    requires
+    sealed
+    to
+    transitive
+    uses
+    var
+    with
+    yield
+
 
 
 */
