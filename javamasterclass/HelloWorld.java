@@ -2206,18 +2206,26 @@ Looking at the code below, what parts are expressions?
 //// Mastering Java Statements, Whitespace, and Code Organization ---------------------------
 /*
 public class Main {
+
     public static void main(String[] args) {
         int myVariable = 50;
 
         myVariable++;
         myVariable--;
-
         System.out.println("This is a test");
-        System.out.println("This is" +  " another" + " still more." );
 
-        int anotherVariable = 50;myVariable--; System.out.println("myVaraible = " + myVariable);
+        System.out.println("This is" + " another" + " still more.");
+
+        int anotherVariable = 50;
+        myVariable--;
+        System.out.println("myVaraible = " + myVariable);
+
+        if (myVariable == 0) {
+            System.out.println("It's now zero");
+        }
     }
 }
+
 
 /// Whitespace
     Whitespace is any extra spacing, horizontally or vertically placed around Java source code.
