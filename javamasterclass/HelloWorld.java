@@ -2232,7 +2232,12 @@ public class Main {
         System.out.println("myVariable = " + myVariable);
 
 
-
+// intellij에서 Reformat code을 사용하면 자동적으로 whitespace를 고려하여 코드를 보기 좋게 예쁘게 정리해줌.(indenting까지 포함)
+    상단 메뉴바 -> 코드 -> 코드 서식 다시 지정 (code -> reformat code)
 
 */
 
+//// Harnessing Code Blocks And The If-Then-Else Statement in Java ---------------------------
+/*
+
+*/
