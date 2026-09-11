@@ -2248,13 +2248,21 @@ public class Main {
 //// Harnessing Code Blocks And The If-Then-Else Statement in Java ---------------------------
 /*
 /// If Then Structure
-if (condition) {
-    // Code in block will execute only if
-    // condition is true
+    if (condition) {
+        // Code in block will execute only if
+        // condition is true
 
-    // block can contain 1 or more statements
+        // block can contain 1 or more statements
+        }
+
+/// If with an Else block
+    if (condition) {
+        // Code in block will execute only if
+        // condition is true
+    } else {
+        // Code in block will execute only if
+        // condition is true
     }
-
 
 
 
