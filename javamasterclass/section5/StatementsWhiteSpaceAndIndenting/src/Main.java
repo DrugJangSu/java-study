@@ -10,5 +10,7 @@ public class Main {
         System.out.println("This is a test");
 
         System.out.println("This is" + " another" + " still more.");
+
+        int anotherVariable = 50;myVariable--; System.out.println("myVaraible = " + myVariable);
     }
 }
