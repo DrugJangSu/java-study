@@ -2371,6 +2371,79 @@ public class MainChallenge {
             // Method statements form the method body
         }
 
+/// Executing a Method as a Statement
+    To execute a method, we can write a statement in code which we say is calling, or invoking the method
+    For a simple method like calculateScore, we just use the name of the method where we want it to be executed followed by parentheses, and a semi-colon to complete the statement.
+
+        calculateScore();
+
+/// Structure of the Method
+    ex)
+
+    public static void methodName(p1type p1, p2type p2, {more}) {
+
+        // Method statements from the method body
+
+    }
+
+/// Parameters or Arguments?
+    Parameters and arguments are terms that are often used interchangeably by developers.
+    But technically a parameter is the definition as shown in the method declaration, and the argument will be the value that's passed to the method when we call it.
+
+/// Executing a Method with parameters
+    To execute a method that's defined with parameters you have to pass variables, values, or expressions that match the type, order and number of the parameters declared.
+    In the calculateScore example, I declared the method with four parameters, the first; a boolean, anmd the other three of int data types.
+    So we have to pass first a boolean, and then 3 int values as shown in the statement:
+        calculateScore(true, 800, 5, 100);
+    You can't pass the boolean type in any place other than as the first argument without an error.
+    The statement below would cause an error.
+        calculateScore(800, 5, 100, true);
+    You can't pass only a partial set of parameters as shown here.
+    This statement too would cause an error.
+        calculateScore(true, 800);
+
+
+ex)
+    public class MainChallenge {
+
+    public static void main(String[] args) {
+
+        boolean gameOver = true;
+        int score = 800;
+        int levelCompleted = 5;
+        int bonus = 100;
+
+        int finalScore = score;
+
+        calculateScore(true, 800, levelCompleted, bonus);
+
+        score = 10000;
+        levelCompleted = 8;
+        bonus = 200;
+
+        finalScore = score;
+
+
+        if (gameOver) { // gameOver == true
+            finalScore += (levelCompleted * bonus); // finalScore = finalScore + (levelCompleted * bonus)
+            System.out.println("Your final score was " + finalScore);
+        }
+    }
+    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+
+        int finalScore = score;
+
+        if (gameOver) { // gameOver == true
+            finalScore += (levelCompleted * bonus); // finalScore = finalScore + (levelCompleted * bonus)
+            finalScore += 1000;
+            System.out.println("Your final score was " + finalScore);
+        }
+    }
+}
+
+*/
+//// Enhancing Skills With Additional Java Method Techniques ---------------------------s
+/*
 
 
 */
