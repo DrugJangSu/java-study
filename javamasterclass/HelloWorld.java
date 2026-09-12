@@ -2352,6 +2352,5 @@ public class MainChallenge {
             System.out.println("Your final score was " + newFinalScore);
         }
 
-
-
 */
+//// Deep Overview of Methods in Java For Reusable Code -----------------------------------
