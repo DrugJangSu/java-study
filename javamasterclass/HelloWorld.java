@@ -2264,6 +2264,22 @@ public class Main {
         // condition is true
     }
 
+/// If with an Else if and Else block
+        if (firstCondition) {
+        // Code in block will execute only if
+        // firstCondition is true
+    } else if (secondCondition) {
+        // Code in block will execute if firstCondition is false
+        // and secondCondition is true
+    <THERE IS NO LIMIT TO THE NUMBER OF CONDITIONS THAT CAN BE TESTED>
+
+    } else {
+        // Code in block will execute if
+        // all conditions above are false
+
+    <THE ELSE BLOCK MUST BE LAST BUT IS OPTIONAL>
+    }
+
 
 
 */
