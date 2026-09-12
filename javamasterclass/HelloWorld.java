@@ -2321,5 +2321,37 @@ ex)
         - Set the existing bonus variable to 200.
         - Use the same if condition. Meaning if gameOver is true, then you want to perform the same calculation and print out the value of the finalScore variable.
 
+/// My solution
+public class MainChallenge {
+
+    public static void main(String[] args) {
+
+        boolean gameOver = true;
+        int score = 10000;
+        int levelCompleted = 8;
+        int bonus = 200;
+
+        int finalScore = score;
+        if (gameOver) { // gameOver == true
+            finalScore += (levelCompleted * bonus); // finalScore = finalScore + (levelCompleted * bonus)
+            System.out.println("Your final score was " + finalScore);
+        }
+    }
+}
+
+
+/// Tim's solution
+        boolean newGameOver = true;
+        int newScore = 10000;
+        int newLevelCompleted = 8;
+        int newBonus = 200;
+
+        int newFinalScore = newScore;
+        if (newGameOver == true) {
+            newFinalScore += (newLevelCompleted * newBonus);
+            System.out.println("Your final score was " + newFinalScore);
+        }
+
+
 
 */
