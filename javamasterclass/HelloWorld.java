@@ -2354,3 +2354,23 @@ public class MainChallenge {
 
 */
 //// Deep Overview of Methods in Java For Reusable Code -----------------------------------
+/*
+/// The Method
+    Java's description of the method is:
+        A method declares executable code that can be invoked, passing a fixed number of values as arguments.
+
+/// The Benefits of the Method
+    A method is a way of reducing code duplication.
+    A method can be executed many times with potentially different results, by passing data to the method in the form of arguments.
+
+/// Structure of the Method
+    The following is one of the simplest ways to declare a method:
+    This method has a name but takes no data in, and returns no data from the method(which is what the special word void means in the declaration)
+    ex)
+        public static void methodName() {
+            // Method statements form the method body
+        }
+
+
+
+*/
