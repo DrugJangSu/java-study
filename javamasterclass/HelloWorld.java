@@ -2444,6 +2444,35 @@ ex)
 */
 //// Enhancing Skills With Additional Java Method Techniques ---------------------------
 /*
+public class MainChallenge {
+    public static void main(String[] args) {
+
+
+        calculateScore(true, 800, 5, 100);
+
+        calculateScore(true, 10000, 8, 200);
+
+    }
+
+    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+
+        int finalScore = score;
+
+        if (gameOver) {
+            finalScore +=- (levelCompleted * bonus);
+            finalScore += 1000;
+            System.out.println("Your final score was " + finalScore);
+        }
+    }
+    }
+
+/// Method Structure with Parameters and Return Type
+// Method return type is a declared Data type for the data that will be returned from the method
+    public static dataType methodName(p1type p1, p2type p2, {more}) {
+    // Method statements
+    return value;
+    }
+// So, similar to declaring a variable with a type, we can declare a method to have a type.
 
 */
 
