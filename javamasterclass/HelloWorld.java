@@ -2472,7 +2472,9 @@ public class MainChallenge {
     // Method statements
     return value;
     }
-// So, similar to declaring a variable with a type, we can declare a method to have a type.
+    - So, similar to declaring a variable with a type, we can declare a method to have a type.
+    - This declared type is placed just before the method name
+    - In addition, a return statement is required in the code block as as shown, which returns the result from the method.
 
 */
 
