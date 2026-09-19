@@ -2530,5 +2530,19 @@ public class MainChallenge {
 */
 //// Comprehensive Recap Of Java Methods ---------------------------
 /*
+/// The Method
+Java's documentation states that : A method declares executable code that can be invoked, passing a fixed number of values as arguments.
+
+/// Is the method a statement or an expression?
+Like some of the abbreviated operators, a method can be a statement or an expression in some instances.
+Any method can be executed as a statement.
+A method that returns a value can be used as an expression, or as part of any expression.
+
+/// What are functions and procedures?
+Some programming languages will call a method that returns a value, a function, and a method that doesn't return a value, a procedure.
+The term procedure is somewhat less common when applied to Java methods, but you may still hear a method with a void return type called procedure.
+
+
+
 
  */
