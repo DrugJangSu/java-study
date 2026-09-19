@@ -2571,15 +2571,91 @@ Any other return type requires a return statement in the method code block.
 If a method declares a return type meaning it's not a void, then a return type is required at any exit point from the method block.
 Consider the method block shown here;
     public static boolean isTooYoung(int age) {
-    if (age < 21) {
-        return true;
+        if (age < 21) {
+            return true;
+        }
     }
-}
+
+So in the case of using a return statement in nested code blocks in a method, all possible code segments must result in a value being returned.
+The following code demonstrates one way to do this;
+    public static boolean isTooYoung(int age) {
+        if (age < 21) {
+            return true;
+        }
+        return false;
+    }
+
+One common practice is to declare a default return value at the start of a method, and only have a single return statement from a method, returning that variable shown in the example method:
+    public static boolean isTooYoung(int age) {
+        boolean result = false;
+        if (age < 21) {
+            result = true;
+        }
+    }
+
+/// The Return Statement for methods that have void as the return type
+The return statement can return with no value from a method, which is declared with a void return type.
+In this case, the return statement is optional, but it may be used to terminate execution of the method at some earlier point than the end of the method block as shown:
+    public static void methodDoesSomething(int age) {
+        if (age > 21) {
+            return;
+        }
+        // Do more stuff here
+    }
+
+/// The Method Signature
+A method is uniquely defined in a class by its name, and the number and type of parameters that are declared for it.
+This is called the method signature.
+You have multiple methods with the same method name, as long as the method signature (meaning the parameters declared) are different.
+
+/// Default values for parameters
+In many languages methods can be defined with default values and you can omit passing values for these when calling the method.
+But Java doesn't support default values for parameters.
+There are work-arounds for this limitation, and this will be used for later.
+But it's important to state that in Java, the number of arguments you pass and their type must match the parameters in the method declaration exactly.
 
 
+/// Revisiting the main method
+Now at this state when we revisit the main method and examine it;
+The main method is special in Java because Java's virtual machine(JVM) looks for the method with thhe following signature and uses it as the entry point for execution of code.
+    public static void main(String[] args) {
+    // code in here
+    }
+//// 이번챕터 잠깐 정리 ---------------------
+/// Java 메서드(Method) 정리
+1. 메서드가 뭔가?
+    실행할 코드를 묶어 이름을 붙여둔 것이고 필요할 때 호출해서 씀. Python의 def 함수, JS의 function와 비슷함
+    - 값을 반환하는 메서드는 표현식으로 쓸 수 있음 (예- int x = add(1,2);)
+    - 어떤 메서드든 문장으로 그냥 실행할 수 있음 (add(1, 2);)
 
+2. 메서드 선언의 구성 요소
+    public static boolean isTooYoung(int age) {...}
+    - 접근/기타 제어자 (public static 등) : 특별한 의미를 가진 키워드
+    - 반환 타입 (boolean 등) : 돌려줄 값의 타입. 없으면 void
+    - 메서드 이름 (isTooYoung) : lowerCamelCase 권장
+    - 파라미터 (int age) : 타입 + 이름, 쉼표로 구분, 없으면 ()
+    - 메서드 본문 {...} : 실제 실행 코드
 
+3. 파라미터 규칙
+    호출할 때 개수, 타입, 순서가 선언과 맞아야 함.
 
+4. return 규칙
+    - void : return은 선택, 쓴다면 return;으로 중간에 빠져나갈 때 사용
+    - 그 외(int, boolean 등) : 모든 실행 경로에서 값을 return해야 함
 
+5. 메서드 시그니처와 오버로딩
+    이름 + 파라미터(개수/타입)가 메서드의 고유 식별자. 이름이 같아도 파라미터가 다르면 별개의 메서드로 공존할 수 있고, 이를 오버로딩이라고 함.
+        static int add(int a, int b) {return a + b;}
+        static double add(double a, double b) {return a + b;}
+6. 파라미터 기본값이 없음
+7. main 메서드
+    public static void main(String[] args) {
+        // 여기부터 실행
+    }
+    JVM이 프로그램을 시작할 때 정확히 이 시그니처의 메서드를 진입점으로 씀.
+
+ */
+//// Hands-On Java Method Challenge For Deeper Practice
+/*
 
  */
