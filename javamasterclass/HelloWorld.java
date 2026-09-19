@@ -2484,6 +2484,14 @@ public class MainChallenge {
     }
 - This method will return an integer when it finishes executing successfully.
 
+/// The return statement
+// Java states that a return statement returns control to the invoker of a method.
+// The most common usage of the return statement is to return a value back from a method.
+// In a method that doesn't return anything, in other words a method declared with void as the return type, a return statement is not required.
+// It is assumed and execution is returned after the last line of code in the method is executed.
+// But in methods that do return data, a return statement with a value is required.
+
+
 
 
 */
