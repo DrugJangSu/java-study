@@ -3099,10 +3099,128 @@ Without a break statement, execution will continue to fall through any case labe
 
 */
 //// Delving Deeper Into Advanced Switch Statement Features -------------------------------
+/*
+/// Enhanced Switch Expressions
+String month = "OCTOBER";
+        System.out.println(month + " is in the " + getQuarter(month) + " quarter");
+        }
 
+public static String getQuarter(String month) {
+    return switch (month) {
+        case "JANUARY", "FEBRUARY", "MARCH" -> "1st";
+        case "APRIL", "MAY", "JUNE" -> "2nd";
+        case "JULY", "AUGUST", "SEPTEMBER" -> "3rd";
+        case "OCTOBER", "NOVEMBER", "DECEMBER" -> "4th";
+        default -> "bad";
+    };
 
+}
 
+}
+    public static String getQuarter(String month) {
+        return switch (month) {
+            case "JANUARY", "FEBRUARY", "MARCH" -> "1st";
+            case "APRIL", "MAY", "JUNE" -> "2nd";
+            case "JULY", "AUGUST", "SEPTEMBER" -> "3rd";
+            case "OCTOBER", "NOVEMBER", "DECEMBER" -> "4th";
+            default -> {
+                String badResponse = month + " is bad";
+                yield badResponse;
+            }
+        };
 
+/// When to use yield in a switch
+    Your switch statement is being used as a switch expression returning a value.
+    Your case label uses a code block with opening and closing curly braces.
 
+   ex)
+        -> "1st";   -> { yield "1st";}
+
+    public static String getQuarter(String month) {
+        return switch (month) {
+            case "JANUARY", "FEBRUARY", "MARCH" -> {yield "1st";}
+            case "APRIL", "MAY", "JUNE" -> "2nd";
+            case "JULY", "AUGUST", "SEPTEMBER" -> "3rd";
+            case "OCTOBER", "NOVEMBER", "DECEMBER" -> "4th";
+            default -> {
+                String badResponse = month + " is bad";
+                yield badResponse;
+            }
+        };
+
+    }
+/// 이번챕터 정리 ----------------------------------------------
+/// Switch 정리
+1. Switch가 무엇인가?
+    값 하나를 여러 후보와 비교해서, 맞는 곳의 코드만 실행하는 문법. if / else if / else 를 더 읽기 좋게 쓰는 방법.
+        if 방식 : if (value == 1) ... else if (value == 2) ...
+        switch : switch (value) {case 1 : ... case 2 : ...}
+    switch는 범위검사를 못하고 필요 시 if를 써야 됨. switch는 같은가? 만 물어보기 때문
+
+2. 기본 구조(전통 방식)
+    int switchValue = 4;
+    switch (switchValue) {
+        case 1:
+            System.out.println("Value was 1");
+            break;
+        case 2:
+            System.out.println("Value was 2");
+            break;
+        default:
+            System.out.println("Was not 1 or 2");
+            break;
+    }
+    => switchValue를 위에서부터 case와 비교하여, 맞지 않을 경우 하나씩 내려와 마지막 default 실행(if else와 비슷함)
+    => break을 만나 switch 종료
+
+3. 여러 case를 하나로 묶기
+    case 3: case 4: case 5:
+        System.out.println("Value was 3, 4, or a 5");
+        System.out.println("Actually it was a " + switchValue);
+        break;
+    => 3,4,5 중 아무거나 맞으면 같은 코드를 실행하는 형식.
+
+4. break와 fall through
+case가 한번 맞으면 그 아래 case는 검사하지 않으나, 대신 break을 만날 때까지 아래 코드를 전부 실행함. 이걸 fall through라고 함.
+    맞는 case 실행 후 -> break 있으면 바로 switch 종료 / break 없으면 아래 case까지 계속 실행
+
+5. Switch에 쓸 수 있는 타입
+    => byte, short, int, char, Byte, Short, Integer, Character, String, enum
+    쓸 수 없는 타입
+    => long, float, double, boolean, 방금 타입들의 wrapper(Long, Double, Boolean)
+
+6. Enhanced switch (화살표 방식)
+break으로 인해 전통 방식이 불편하여 새로 나온 문법(Java 14 or above)
+    public static String getQuarter(String month) {
+    return switch (month) {
+        case "JANUARY", "FEBRUARY", "MARCH" -> "1st";
+        case "APRIL", "MAY", "JUNE" -> "2nd";
+        case "JULY", "AUGUST", "SEPTEMBER" -> "3rd";
+        case "OCTOBER", "NOVEMBER", "DECEMBER" -> "4th";
+        default -> "bad";
+    };
+    }
+    => 전통 switch와는 다르게 break가 필요 없으며, fall through도 걱정 없이 조건에 맞는 것만 실행됨.
+    => 또한 return switch 처럼 값으로도 돌려주어 사용 가능
+
+7. Yield?
+화살표 오른쪽에 한줄짜리 값이 아니라 여러 줄 코드를 쓸 때 {}를 통해 yield로 값을 내보냄.
+    조건 : switch를 값을 돌려주는 식으로 씀 (return switch, String x = switch)
+          case 뒤에 { } 코드 블록을 씀
+    ex)
+    default -> {
+        String badResponse = month + " is bad";
+        yield badResponse;    // 이 값이 switch 전체의 결과가 됨
+    }
+
+    => 이 때 yield와 return은 서로 다름.
+        yield는 "이 case의 결과값을 switch에게 준다"
+        return는 "메서드 자체를 끝낸다"
+        그래서 switch 안에서는 yield를 씀.
+*/
+//// Traditional Switch Statement Challenge And Practical Exercises -------------------------------------------
+/*
+
+*/
 
 
