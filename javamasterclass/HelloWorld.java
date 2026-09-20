@@ -2926,10 +2926,62 @@ public class Main {
     }
 }
 
+<Tim's solution>
+public class Main {
 
+    public static void main(String[] args) {
+        System.out.println(getDurationString(3945));
+        System.out.println(getDurationString(,));
+    }
+    public static String getDurationString(int seconds) {
+        // Two step approach to get hours
+        int minutes = seconds / 60;
+        return getDurationString(minutes, seconds);
+    }
+
+    public static String getDurationString(int minutes, int seconds) {
+        int hours = minutes / 60;
+
+        int remainingMinutes = minutes % 60;
+        int remainingSeconds = seconds % 60;
+
+        return hours + "h " + remainingMinutes + "m " + remainingSeconds + " s";
+
+        return "";
+    }
+}
 */
+//// Detailed Bonus Challenge Solution And Key Insights -----------------------------------
+/*
+    <Add validation to the methods as a bonus>
+    - For the first method, the seconds parameter should be >= 0
+    - For the second method the minutes parameter should be >= 0, and the seconds parameter should be >= 0, and <= 59
+    - If either method is passed an invalid value, print out some type of meaningful message to the user.
+    (본인은 이미 이전 강의에서 코드 짰으니 참고용)
+public class Main {
 
+    public static void main(String[] args) {
+        System.out.println(getDurationString(3945));
+        System.out.println(getDurationString(,));
+    }
+    public static String getDurationString(int seconds) {
+        // Two step approach to get hours
+        int minutes = seconds / 60;
+        return getDurationString(minutes, seconds);
+    }
 
+    public static String getDurationString(int minutes, int seconds) {
+        int hours = minutes / 60;
+
+        int remainingMinutes = minutes % 60;
+        int remainingSeconds = seconds % 60;
+
+        return hours + "h " + remainingMinutes + "m " + remainingSeconds + " s";
+
+        return "";
+    }
+}
+ */
 
 
 
