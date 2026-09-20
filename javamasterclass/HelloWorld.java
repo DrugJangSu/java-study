@@ -2884,7 +2884,7 @@ In this challenge, create a method that takes time represented in seconds, as a 
 And then transform the seconds into hours.
 Next display the time in hours with the remaining minutes and seconds in a String.
 Do the transformation in two steps which allow to use overloaded methods.
-We want to create two methods with the same name : getDuratingString
+We want to create two methods with the same name : getDurationString
     - The first method has one parameter of type int, named seconds
     - The second method has two parameters named minutes ane seconds both ints.
     - Both methods return a String in the format shown;
@@ -2896,10 +2896,35 @@ We want to create two methods with the same name : getDuratingString
     - One minute is 60 seconds, one hour is 60 minutes or 3600 seconds
     <Add validation to the methods as a bonus>
     - For the first method, the seconds parameter should be >= 0
-    - For the second method the minutes parametr should be >= 0, and the seconds parameter should be >= 0, and <= 59
+    - For the second method the minutes parameter should be >= 0, and the seconds parameter should be >= 0, and <= 59
     - If either method is passed an invalid value, print out some type of meaningful message to the user.
 
+<My Solution>
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(getDurationString(200));
+        System.out.println(getDurationString(350, 25));
+    }
+    public static String getDurationString(int seconds) {
+        if (seconds < 0) {
+            System.out.println("Invalid value detected. the value should be 0 or above.");
+            return "";
+        }   else {
+            return getDurationString(seconds/60, seconds%60);
+        }
+    }
 
+
+    public static String getDurationString(int minutes, int seconds) {
+        if (minutes < 0 || seconds < 0 || seconds > 59) {
+            System.out.println("Invalid value detected. the value should be 0 or above, and seconds shouldn't exceed 59.");
+            return "";
+        } else {
+
+            return ((minutes/60)+ "h " + (minutes%60 + seconds/60) +"m " + (seconds%60) + "s");
+        }
+    }
+}
 
 
 */
