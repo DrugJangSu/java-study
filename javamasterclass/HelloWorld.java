@@ -2981,17 +2981,16 @@ public class Main {
             return "Invalid data for seconds(" + seconds + "), must be between 0 and 59";
         }
         int hours = minutes / 60;
+        return getDurationString(seconds / 60, seconds % 60);
 
         int remainingMinutes = minutes % 60;
-        int remainingSeconds = seconds % 60;
 
         return hours + "h " + remainingMinutes + "m " + remainingSeconds + " s";
-
-        return "";
     }
 }
 
 ------VS------
+
 <내 코드>
 public class Main {
     public static void main(String[] args) {
@@ -3018,10 +3017,9 @@ public class Main {
         }
     }
 }
-
-
  */
-
+///// Section 6 : Mastering Conditional Logic, Loops, And Interactive Java Applications -----------------------------------------
+//// Exploring The Traditional And Enhanced Switch Statements -------------------------------
 
 
 
