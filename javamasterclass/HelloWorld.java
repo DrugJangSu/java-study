@@ -3023,6 +3023,23 @@ public class Main {
 // Three additional statements : the for statement, the while statement, and the do while statement which are used to repeat code segments based on conditions.
 //// Exploring The Traditional And Enhanced Switch Statements -------------------------------
 /*
+/// The switch statement
+    switch(value) {
+        case x:
+            // Code for value == x
+            break;
+        case y:
+            // Code for value == y
+            break;
+        default:
+            // Code for value not equal to x or y
+        }
+
+
+
+
+
+
 
 
 */
