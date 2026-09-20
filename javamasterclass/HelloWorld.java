@@ -3019,8 +3019,13 @@ public class Main {
 }
  */
 ///// Section 6 : Mastering Conditional Logic, Loops, And Interactive Java Applications -----------------------------------------
+// In this section, we'll be learning about the switch statement, which like the if then else statement allowing to execute different code blocks based on different conditions.
+// Three additional statements : the for statement, the while statement, and the do while statement which are used to repeat code segments based on conditions.
 //// Exploring The Traditional And Enhanced Switch Statements -------------------------------
+/*
 
+
+*/
 
 
 
