@@ -2844,8 +2844,74 @@ Nor are return types used when determining if a method is unique.
 }
 
  */
-//// Practical Method Overloading Challenge To Strengthen Java Expertise
+//// Practical Method Overloading Challenge To Strengthen Java Expertise-----------------------------------
 /*
+/// Overloaded Method Challenge Instructions
+Create two methods with the same name : convertToCentimeters
+    - The first method has one parameter of type int which represents the entire height in inches.
+        You'll convert inches to centimeters, in this method and pass back the number of centimeters as a double.
+    - The second method has two parameters of type int, one to represent height in feet, and one to represent the remaining height in inches.
+        So if a person is 5 foot 8 inches, the values 5 for feet and 8 for inches would be passed to this method.
+        This method will convert feet and inches to just inches,then call the first method to get the number of centimeters also returning the value as a double.
+    - Both methods should return a real number or decimal value for total height in centimeters.
+    - Call both methods, and print out the results.
+The conversion formula from inches to centimeters is 1 inch = 2.54cm
+Also remember : one foot = 12 inches.
 
+
+<My Solution>
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(convertToCentimeters(5, 8));
+        System.out.println(convertToCentimeters(68));
+
+    }
+    public static double convertToCentimeters(int inch) {
+        return inch * 2.54;
+
+    }
+    public static double convertToCentimeters(int foot, int inch) {
+        return convertToCentimeters((foot * 12 + inch));
+    }
+}
 
  */
+//// Comprehensive Seconds-And-Minutes Challenge For Time-Based Calculations -----------------------------------
+/*
+///  Seconds And Minutes Challenge
+In this challenge, create a method that takes time represented in seconds, as a parameter.
+And then transform the seconds into hours.
+Next display the time in hours with the remaining minutes and seconds in a String.
+Do the transformation in two steps which allow to use overloaded methods.
+We want to create two methods with the same name : getDuratingString
+    - The first method has one parameter of type int, named seconds
+    - The second method has two parameters named minutes ane seconds both ints.
+    - Both methods return a String in the format shown;
+        'XXh YYm ZZs'
+         XX represents the number of hours, YY the number of minutes, and ZZ the number of seconds.
+    - The first method should in turn call the second method to return its results.
+    <tips>
+    - Make both methods public and static
+    - One minute is 60 seconds, one hour is 60 minutes or 3600 seconds
+    <Add validation to the methods as a bonus>
+    - For the first method, the seconds parameter should be >= 0
+    - For the second method the minutes parametr should be >= 0, and the seconds parameter should be >= 0, and <= 59
+    - If either method is passed an invalid value, print out some type of meaningful message to the user.
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
