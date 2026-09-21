@@ -3263,10 +3263,133 @@ public class Main {
     }
 }
 
-
-
-
-
 */
+//// Embracing Switch Expressions With A Hands-On Coding Challenge  -------------------------------------------
+/*
+/// Switch Expression Challenge
+// Day of the Week Challenge
+1. Create a method called printDayOfWeek that takes an int parameter called day, but doesn't return any values
+    - Use the enhanced switch statement to return the name of the day based on the parameter passed to the switch
+    statement, so that 0 will return "Sunday", 1 will return "Monday", and so on. Any number not between 0 and 6
+    should return "Invalid Day." Note that return here means the value returned from the enhanced switch statement.
+    - Use the enhanced switch statement as an expression returning the result to a String named dayOfTheWeek.
+    - Print both the day variable and the dayOfTheWeek variable.
+2. In the main method, call this method for the values 0 through 7.
+3. Bonus: Create a second method called printWeekDay that uses an if then else statement instead of switch to produce
+   the same output.
+
+<my solution>
+public class Main {
+    public static void main(String[] args) {
+    printDayOfWeek(0);
+    printDayOfWeek(1);
+    printDayOfWeek(2);
+    printDayOfWeek(3);
+    printDayOfWeek(4);
+    printDayOfWeek(5);
+    printDayOfWeek(6);
+    printDayOfWeek(7);
+    }
+
+    public static void printDayOfWeek(int day) {
+        String dayOfTheWeek = switch (day) {
+            case 0 -> "SUNDAY";
+            case 1 -> "MONDAY";
+            case 2 -> "TUESDAY";
+            case 3 -> "WEDNESDAY";
+            case 4 -> "THURSDAY";
+            case 5 -> "FRIDAY";
+            case 6 -> "SATURDAY";
+            default -> {
+                String badResponse = "Invalid day";
+                yield badResponse;
+            }
+        };
+        System.out.println(dayOfTheWeek);
+    }
+}
+<Tim's solution>
+public class Main {
+    public static void main(String[] args) {
+        printWeekDay(0);
+        printWeekDay(1);
+        printWeekDay(2);
+        printWeekDay(3);
+        printWeekDay(4);
+        printWeekDay(5);
+        printWeekDay(6);
+        printWeekDay(7);
+    }
+
+    public static void printDayOfWeek(int day) {
+        String dayOfWeek = switch (day) {
+            case 0 -> { yield "Sunday"; }
+            case 1 -> "Monday";
+            case 2 -> "Tuesday";
+            case 3 -> "Wednesday";
+            case 4 -> "Thursday";
+            case 5 -> "Friday";
+            case 6 -> "Saturday";
+            default -> "Invalid Day";
+            };
+        System.out.println(day + " stands for " + dayOfWeek);
+
+    }
+
+    public static void printWeekDay (int day) {
+
+        String dayOfWeek = "Invalid Day";
+        if (day == 0) {
+            dayOfWeek = "Sunday";
+        } else if (day == 1) {
+            dayOfWeek = "Monday";
+        } else if (day == 2) {
+            dayOfWeek = "Tuesday";
+        } else if (day == 3) {
+            dayOfWeek = "Wednesday";
+        } else if (day == 4) {
+            dayOfWeek = "Thursday";
+        } else if (day == 5) {
+            dayOfWeek = "Friday";
+        } else if (day == 6) {
+            dayOfWeek = "Saturday";
+        }
+        System.out.println(day + " stands for " + dayOfWeek);
+    }
+}
+*/
+//// Mastering The for Statement For Repetitive Task Automation -------------------------------------------
+/*
+/// Looping
+Looping lets us execute the code a multiple number of times.
+Java supports several statements for looping or executing code repetitively.
+
+/// Java supports three statements for looping
+    for : The for loop is more complex to set up but is commonly used when you are iterating over a set of values.
+    while : The while loop executes until a specified condition becomes false.
+    do while : THe do while loop always executes at least one and continues until a specified condition becomes false.
+
+/// The for statement
+The for statement is often referred to as the for loop.
+It repeatedly loops something until a condition is satisfied.
+
+    for (init; expression; increment) {
+        //block of statements
+    }
+
+There are three parts to the basic for statement's declaration.
+These are declared in parentheses, after the for keyword, and are separated by semi-colons.
+These parts are all optional and consist of the following:
+    - The initialization section declares or sets state, usually declaring and initializing a loop variable, before the loop begins processing.
+    - The expression section once it becomes false, will end the loop processing.
+    - The increment section is executed after the expression is tested, and is generally the place where the loop variable is incremented.
+
+
+
+
+
+ */
+
+
 
 
