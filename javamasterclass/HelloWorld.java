@@ -3937,11 +3937,11 @@ public class Main {
         - ex) "hello".toUpperCase();
         - A method called toUpperCase is called on the instance of a String with value "hello".
 
-
-
  */
 //// Parsing Values And Reading Console Input – system.console() Overview  ----------------------------------------
+/*
 
+ */
 //// Handling Exceptions And Introducing The Scanner Class  ----------------------------------------
 
 ////  Reading Input With The Scanner For Seamless User Interaction  ----------------------------------------
