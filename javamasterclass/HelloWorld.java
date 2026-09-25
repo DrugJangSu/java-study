@@ -3798,7 +3798,85 @@ public class Main {
 //// Exploring Local Variables And Scope In Java Blocks  ----------------------------------------
 /*
 /// Local Variables and Scope
+/// Local Variable
+    A Local Variable is called local because it is available for use by the code block in which it was declared.
+    It is also available to code blocks that are contained by a declaring block.
+        (ex)
+        {       // starts on outer block - for example a method block
+            int firstVariable = 5;
+            int secondVariable = 10;
+            if (firstVariable > 0) { // flow statement block starts inner block
+            }
+                // Inner block code has access to outer block's variables
+                System.out.println(secondVariable);
+            }
+        }
 
+/// Scope
+    Scope describes the accessiblity of a variable.
+    "In scope" means the variable can be used by an executing block or any nested blocks.
+    "Out of scope" means the variable is no longer available and cannot be used.
+
+/// When are Local Variables in Scope?
+    Local variables are always in scope in the block they are declared.
+    They are also in scope for any nested blocks or blocks contained within the outer block.
+    Local varaibles are always out of scope for outer blocks or the containing blocks they are declared in.
+
+    (ex)
+    public static void aMethod(boolean aBoolean) {
+    if (aBoolean) {
+        int myCounter = 10;                 // myCounter is local to this if block
+        }
+        System.out.println(myCounter);      // myCounter is out of scope here
+    }
+/// Scope Best Practices
+    It is considered best practice:
+        To declare and initalize variables in the same place possible.
+        And to declare om the narrowest scope possible.
+
+/// Local Variables and the For Statement
+    In this "for" statement, as part of the declaration there is an initialization part.
+    In this case the variable i isn't accessible outside of the loop.
+    It's because any variables declared in the init section are local to the loop meaning they exist and are accessible in memory
+    only while the loop is executing and only to the loop code block.
+    (ex)
+    {   // Starts on outer block - for example a method block
+        for (int i = 1; i <= 5; i++) { // i declared in for loop declaration
+            System.out.println(i);
+        }
+      System.out.println(i);   // ERROR! i is out of scope
+    }
+
+/// Declaring variables in a switch statement block
+    Local variables declared in an if statement block are not accessible outside of that block.
+    This also includes other parts of the if statement like the else if block or the else block.
+    (ex)
+    public static void aMethod (int counter) {
+        if (counter > 0) {
+            int i = 10;
+        }
+        else {
+            System.out.println(i); // ERROR : i is out of scope
+        }
+
+        System.out.println(i); // ERROR : i is out of scope
+    }
+
+    However the switch statement is different from the if-then-else statement blocks.
+    (ex)
+    public static void aMethod (int value) {
+        switch (value) {
+            case 1:
+                int i = 10;
+                break;
+
+            default:
+                i = value;              // ok
+                System.out.println(i);  // ok
+                break;
+        }
+        System.out.println(i); // ERROR : i is out of scope outside of the switch
+    }
 
 
 
