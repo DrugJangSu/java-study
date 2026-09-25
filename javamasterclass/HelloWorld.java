@@ -3794,14 +3794,15 @@ public class Main {
     do {                 // curly braces to define loop code block (body)
         // statements
     } while (condition); // semicolon is required
-
-
-
-
-
 */
 //// Exploring Local Variables And Scope In Java Blocks  ----------------------------------------
+/*
+/// Local Variables and Scope
 
+
+
+
+ */
 //// Understanding Classes, Objects, And Static Versus Instance Members  ----------------------------------------
 
 //// Parsing Values And Reading Console Input – system.console() Overview  ----------------------------------------
