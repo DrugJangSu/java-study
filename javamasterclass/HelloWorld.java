@@ -3878,11 +3878,30 @@ public class Main {
         System.out.println(i); // ERROR : i is out of scope outside of the switch
     }
 
+    (ex2)
+    public static void aMethod(int value) {
+        switch (value) {
+            case 1:
+                System.out.println(i); // this is NOT ok, i declared below
+                break;
+            case 2:
+                int i = 10;
+                System.out.println(i); // this is ok
+            default:
+                i = value; // this is ok
+                System.out.println(i); // this is ok
+                break;
+        }
+        System.out.println(i); // ERROR : i is out of scope outside the switch
+    }
+ */
+//// Understanding Classes, Objects, And Static Versus Instance Members  ----------------------------------------
+/*
+
+
 
 
  */
-//// Understanding Classes, Objects, And Static Versus Instance Members  ----------------------------------------
-
 //// Parsing Values And Reading Console Input – system.console() Overview  ----------------------------------------
 
 //// Handling Exceptions And Introducing The Scanner Class  ----------------------------------------
