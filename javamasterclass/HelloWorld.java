@@ -3897,6 +3897,8 @@ public class Main {
  */
 //// Understanding Classes, Objects, And Static Versus Instance Members  ----------------------------------------
 /*
+/// The class, The object, static & instance fields and methods
+
 
 
 
