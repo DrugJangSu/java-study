@@ -3573,12 +3573,99 @@ public class Main {
 - Break out of the loop once you have found 5 numbers that met the conditions above.
 - After breaking out of the loop, print the sum of the numbers that met the conditions above.
 
+public class Main {
 
+    public static void main(String[] args) {
 
+    int countOfMatches = 0; // 조건을 만족한 숫자가 몇 개인지 세기 위한 변수
+    int sumOfMatches = 0; // 조건을 만족한 숫자들의 합을 저장할 변수
 
+    for (int loopNumber = 1; loopNumber <= 1000; loopNumber++) {  // 1부터 1000까지 숫자를 하나씩 확인, loopNumber가 1000 이하인 동안 반복, // 한 번 반복할 때마다 loopNumber를 1 증가
+        if ((loopNumber % 3 == 0) && (loopNumber % 5 == 0)) { // 현재 숫자가 3과 5가 동시에 나누어 떨어지는지 확인
+            countOfMatches++; // 조건을 만족한 숫자의 개수를 1 증가
+            sumOfMatches += loopNumber; // 조건을 만족한 숫자를 합계에 더함
+            System.out.println("Found a match = " + loopNumber);  // 조건을 만족한 숫자를 출력
+        }
+        if (countOfMatches == 5) { // 조건을 만족한 숫자를 5개 찾았다면
+            break; // for 반복문을 즉시 종료
+        }
+    }
+        System.out.println("Sum = " + sumOfMatches);  // 반복문이 끝난 후 지금까지 찾은 숫자들의 합을 출력
+    }
+}
 
 */
+//// for Loop Recap And Key Takeaways for Iteration in Java  ----------------------------------------
+/*
+/// The for Statement Recap
+for (init; condition; increment) { // for (초기화; 조건; 증가/변화)
+    // statements;                  // 반복할 코드
+}
+
+ */
+//// The while And do-while Statements For Conditional Looping ----------------------------------------
+/*
+/// Java has two types of while loops
+    while : Continue executing code block until the loop expression becomes false
+    do while : Execute the code block once then continue executing until the loop condition becomes false
+
+/// The for statement and the while statement
+    // The for statement
+    for (init; expression; increment) {
+    // block of statements
+    }
+
+    // The while statement
+    while (expression) {
+    // block of statements
+    }
+
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+
+//        // while loop
+//        int j = 1;
+//        while (true) {
+//            if (j > 5) {
+//                break;
+//            }
+//            System.out.println(j);
+//            j++;
+//        }
+
+        // do while loop
+        int j = 1;
+        boolean isReady = false;
+        do {                    // do 안의 코드를 먼저 실행
+            if (j > 5) {        // j가 5보다 커졌는지 확인
+                break;          // j가 5보다 크면 do-while문 종료
+            }
+            System.out.println(j);
+            j++;
+        }  while (isReady); // do블록 실행 이후 여기서 isReady 값을 확인함. isReady가 true이면 do로 돌아가 다시 실행. false이면 반복 종료
+    }
+}
+
+
+/// continue
+the continue statement- in its simpliest form will stop executing the current iteration of a block of code in a loop and start a new iteration.
+
+        // continue
+        int number = 0; // 변수를 0부터 시작
+        while (number < 50) { // number가 50보다 작은 동안 반봅
+            number += 5; // 매번 number에 5 더하기
+            if (number % 25 == 0) { // number가 25로 나누어 떨어지는지 확인(25의 배수)
+                continue; // 해당되면 해당 반복을 끝내고 다음 반복으로 넘어감 (vs break : 반복문 자체 종료)
+            }
+            System.out.print(number + "_");
+        }
 
 
 
+
+
+ */
 
