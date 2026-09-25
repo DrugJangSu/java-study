@@ -3940,6 +3940,41 @@ public class Main {
  */
 //// Parsing Values And Reading Console Input – system.console() Overview  ----------------------------------------
 /*
+/// Wrapper methods to parse strings to numeric values
+    (Wrapper) - (Wrapper Method)
+    Integer - parseInt(String)
+    Double - parseDouble(String)
+
+    ex) string -> integer
+    public class Main {
+    public static void main(String[] args) {
+        int currentYear = 2022;
+        String usersDateOfBirth = "1999";
+
+        int dateOfBirth = Integer.parseInt(usersDateOfBirth); // this takes a string and returns an integer.
+
+        System.out.println("Age = " + (currentYear - dateOfBirth));
+        }
+    }
+
+    ex) string -> double
+    public class Main {
+    public static void main(String[] args) {
+        int currentYear = 2022;
+        String usersDateOfBirth = "1999";
+
+        int dateOfBirth = Integer.parseInt(usersDateOfBirth);
+
+        System.out.println("Age = " + (currentYear - dateOfBirth));
+
+        String usersAgeWithPartialYear = "22.5";
+        double ageWithPartialYear = Double.parseDouble(usersAgeWithPartialYear);
+        System.out.println("Age = " + ageWithPartialYear);
+        }
+    }
+
+
+
 
  */
 //// Handling Exceptions And Introducing The Scanner Class  ----------------------------------------
