@@ -3917,15 +3917,26 @@ public class Main {
 
 /// Static and Instance fields
     Static field
-        - Requires 'Static' keyword when declared on the class.
+        - Requires 'static' keyword when declared on the class.
         - Value of the field is stored in special memory location and only in one place.
         - Value is accessed by ClassName.fieldname
         - ex) Integer.MAX_VALUE
     Instance Field
-        - Omits 'Static' keyword when declared in the class.
+        - Omits 'static' keyword when declared in the class.
         - Value of the field is not allocated any memory and has no value until the object is created.
         - Value is accessed by ObjectVariable.fieldname
         - ex) myObject.myFieldName (myObject is our variable name for an object we create and myFieldName is an attribute on the class)
+    Static Method
+        - Requires 'static' keyword when declared on the class.
+        - Method is accessed by ClassName.methodName
+        - ex) Integer.parseInt("123);
+        - A method called parseInt is called directly from the Class, Integer
+    Instance Method
+        - Omits 'static' keyword when declared on the class
+        - Method is accessed by ObjectVariable.methodName
+        - ex) "hello".toUpperCase();
+        - A method called toUpperCase is called on the instance of a String with value "hello".
+
 
 
  */
