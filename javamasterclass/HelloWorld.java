@@ -3784,12 +3784,32 @@ public class Main {
 }
 
 */
-
-
 //// Revisiting The while And do-while Loops: A Complete Recap ----------------------------------------
 /*
+/// The while Statement recap
+    while (condition) { // curly braces to define loop code block (body)
+        // statements
+    }
+
+    do {                 // curly braces to define loop code block (body)
+        // statements
+    } while (condition); // semicolon is required
+
 
 
 
 
 */
+//// Exploring Local Variables And Scope In Java Blocks  ----------------------------------------
+
+//// Understanding Classes, Objects, And Static Versus Instance Members  ----------------------------------------
+
+//// Parsing Values And Reading Console Input – system.console() Overview  ----------------------------------------
+
+//// Handling Exceptions And Introducing The Scanner Class  ----------------------------------------
+
+////  Reading Input With The Scanner For Seamless User Interaction  ----------------------------------------
+
+//// Hands-On Reading User Input Challenge For Practical Mastery --------------------------------------------
+
+//// Identifying Min And Max Values – A Final Control Flow Challenge  -------------------------------------------
