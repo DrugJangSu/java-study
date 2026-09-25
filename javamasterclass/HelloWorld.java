@@ -4181,14 +4181,87 @@ public class Main {
 //// Hands-On Reading User Input Challenge For Practical Mastery --------------------------------------------
 /*
 /// Reading User Input Challenge
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int counter = 1;
+        int sum = 0;
+        while (counter <= 5) {
+            System.out.println("Enter number #" + counter + ": ");
+            String nextNumber = scanner.nextLine();
+            try {
+                int number = Integer.parseInt(nextNumber);
+                counter++;
+                sum += number;
+            } catch (NumberFormatException nfe) {
+                System.out.println("Invalid Number");
+            }
+        }
+        System.out.println("The sum of the 5 numbers = " + sum);
+    }
+
+}
+
+<double version>
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int counter = 1;
+        double sum = 0;
+        while (counter <= 5) {
+            System.out.println("Enter number #" + counter + ": ");
+            String nextNumber = scanner.nextLine();
+            try {
+                double number = Double.parseDouble(nextNumber);
+                counter++;
+                sum += number;
+            } catch (NumberFormatException nfe) {
+                System.out.println("Invalid Number");
+            }
+        }
+        System.out.println("The sum of the 5 numbers = " + sum);
+    }
+
+}
+
+<do while version>
 
 
+import java.util.Scanner;
 
+public class Main {
 
+    public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
 
+        int counter = 1;
+        double sum = 0;
+        do {
+            System.out.println("Enter number #" + counter + ": ");
+            String nextNumber = scanner.nextLine();
+            try {
+                double number = Double.parseDouble(nextNumber);
+                counter++; // try 블록 내부에 있는 이유는 유효한 값(올바른 숫자)이 들어올 때만 counting
+                sum += number;
+            } catch (NumberFormatException nfe) {
+                System.out.println("Invalid Number");
+            }
+        } while (counter <= 5);
+        System.out.println("The sum of the 5 numbers = " + sum);
+    }
+
+}
 
 */
-
-
 //// Identifying Min And Max Values – A Final Control Flow Challenge  -------------------------------------------
