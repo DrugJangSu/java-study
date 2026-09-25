@@ -3898,9 +3898,34 @@ public class Main {
 //// Understanding Classes, Objects, And Static Versus Instance Members  ----------------------------------------
 /*
 /// The class, The object, static & instance fields and methods
+/// The Class
+    The Class can be described as:
+    - a custom data type
+    - a special code block that contains methods
 
+/// The class is a template for creating objects
 
+/// An Object
+    An object is called an instance of a particular class
 
+/// Declaring and instantiating a new object from a Class
+    The most common way to create an object is to use the new keyword.
+    The new keyword creates an instance of a class, and you can optionally pass data when creating that instance to set up data on that object.
+    Looking at the String it's actually a class. But it holds a special place in the Java language because we can create a String just by using a literal which we've seen.
+    ex) String s = "Hello";
+    ex) String s = new String("Hello");
+
+/// Static and Instance fields
+    Static field
+        - Requires 'Static' keyword when declared on the class.
+        - Value of the field is stored in special memory location and only in one place.
+        - Value is accessed by ClassName.fieldname
+        - ex) Integer.MAX_VALUE
+    Instance Field
+        - Omits 'Static' keyword when declared in the class.
+        - Value of the field is not allocated any memory and has no value until the object is created.
+        - Value is accessed by ObjectVariable.fieldname
+        - ex) myObject.myFieldName (myObject is our variable name for an object we create and myFieldName is an attribute on the class)
 
 
  */
