@@ -4346,7 +4346,16 @@ public class Main {
     A static method can't be dependent on any one object's state, so it can't reference any instance members.
     In other words any method that operates on isntance fields needs to be non-static.
 
+// Organizing classes
+    Classes can be orgainzed into logical groupings which are called packages.
+    You declare a package name in the class using the package statement.
+    If you don't declare a package, the class implicitly belongs to the default package.
 
+/// Access modifiers
+    A class is said to be a top-level class if it's defined in the source code file and not enclosed in the code block of another class, type, or method.
+    A top-level class has only two valid modifier options: public or none.
+        public : public means any other class in any package can access this class.
+        "    " : When the modifier is omitted, this has a special meaning called package access, meaning the class is accessible only to classes in the same package.
 
 
 */
