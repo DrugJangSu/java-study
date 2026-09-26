@@ -4538,11 +4538,19 @@ public class Main {
     This constructor has no parameters and is often called the no-args(no arguments) constructor.
     If a class contains any other constructor declarations, then a default constructor is NOT implicitly declared.
 
-
-
-
+/// Constructor overloading
+    Constructor overloading is declaring multiple constructors with different parameters.
+    The number of parameters can be different between constructors.
+    If the number of parameters is the same between two constructors, their types or order of the types must differ.
  */
 //// Constructors Part 2 : Overloading and Chaining ---------------------------------------------------
+/*
+
+
+
+
+*/
+
 //// Constructor Challenge : Building Customer Data ---------------------------------------------------
 //// Understanding References, Objects and Instances ---------------------------------------------------
 //// Static vs Instance Methods Explained ---------------------------------------------------
