@@ -4357,10 +4357,44 @@ public class Main {
         public : public means any other class in any package can access this class.
         "    " : When the modifier is omitted, this has a special meaning called package access, meaning the class is accessible only to classes in the same package.
 
+/// Access modifiers for class members
+    An access modifier at the member level allows granular control over
+    The valid access modifiers are shown in the table from the least restrictive to the most restrictive
+    (Access Keyword) - (Description)
+    public : public means any other class in any package can access this class
+    protected : protected allows classes in the same package, and any subclasses in other packages to have access to the member.
+    "     " : When the modifier is omitted this has a special meaning called package access, meaning the member is accessible only to classes in the same package
+    private : private means that no other class can access this member
+
+/// Encapsulation
+    Encapsulation in Object-Oriented Programming usually has two meanings.
+    One is the bundling of behavior and attributes on a single object.
+    The other is the practice of hiding fields and some methods from public access.
+
+public class Car {
+    private String make;
+    private String model;
+    private String color;
+    private int doors;
+    private boolean convertible;
+
+    public void describeCar () {
+        System.out.println(doors + "-Door" +
+                color + " " +
+                make + " " +
+                model + " " +
+                (convertible ? "Convertible" : ""));
+    }
+}
 
 */
 
 //// Getters, Encapsulation, and Object Access ---------------------------------------------------
+/*
+
+ */
+
+
 //// Setters, Object Creation, and OOP Practice ---------------------------------------------------
 //// Classes Challenge : Building a Bank Account ---------------------------------------------------
 //// Constructors Part 1 : Object Initialization ---------------------------------------------------
