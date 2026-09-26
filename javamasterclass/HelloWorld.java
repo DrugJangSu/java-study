@@ -4423,15 +4423,100 @@ public class Car {
  */
 //// Classes Challenge : Building a Bank Account ---------------------------------------------------
 /*
+public class Account {
+    private String number;
+    private double balance;
+    private String customerName;
+    private String customerEmail;
+    private String customerPhone;
 
 
+    public void depositFunds(double depositAmount) {
+        balance += depositAmount;
+        System.out.println("Deposit of $" + depositAmount + " made. New balance is $" + this.balance);
+    }
+
+    public void withdrawFunds(double withdrawAmount) {
+        if (balance - withdrawAmount < 0) {
+            System.out.println("Insufficient funds. You have only $ " + balance + " in your account.");
+        } else {
+            balance -= withdrawAmount;
+            System.out.println("Withdrawal of $" + withdrawAmount + " processed. Remaining Balance = $ " + balance);
+        }
+
+    }
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public String getCustomerEmail() {
+        return customerEmail;
+    }
+
+    public void setCustomerEmail(String customerEmail) {
+        this.customerEmail = customerEmail;
+    }
+
+    public String getCustomerPhone() {
+        return customerPhone;
+    }
+
+    public void setCustomerPhone(String customerPhone) {
+        this.customerPhone = customerPhone;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Account bobsAccount = new Account();
+
+        bobsAccount.setNumber("12345");
+        bobsAccount.setBalance(1000);
+        bobsAccount.setCustomerName("Bob Brown");
+        bobsAccount.setCustomerEmail("myemail@bob.com");
+        bobsAccount.setCustomerPhone("(087) 123-4567");
+        bobsAccount.withdrawFunds(100.0);
+        bobsAccount.depositFunds(250.0);
+        bobsAccount.withdrawFunds(50.0);
+
+        bobsAccount.withdrawFunds(200.0);
+
+        bobsAccount.depositFunds(100.0);
+        bobsAccount.withdrawFunds(45.55);
+        bobsAccount.withdrawFunds(54.46);
+
+        bobsAccount.withdrawFunds(54.45);
+
+    }
 
 
-
-
-
+}
 */
 //// Constructors Part 1 : Object Initialization ---------------------------------------------------
+/*
+
+ */
 //// Constructors Part 2 : Overloading and Chaining ---------------------------------------------------
 //// Constructor Challenge : Building Customer Data ---------------------------------------------------
 //// Understanding References, Objects and Instances ---------------------------------------------------
