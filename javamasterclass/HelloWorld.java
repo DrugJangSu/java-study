@@ -4515,6 +4515,31 @@ public class Main {
 */
 //// Constructors Part 1 : Object Initialization ---------------------------------------------------
 /*
+/// Constructor // 생성자
+    A constructor is used in the creation of the object. // 객체가 만들어질 때 (new) 가장 먼저 딱 한번 자동 실행되는 초기설정 작업.
+    It is a special type of code block that has a specific name and parameters, much like a method.
+    It has the same name as the class itself, and it doesn't return any values.
+    You never include a return type from a constructor, not even void.
+    You can and should specify an appropriate access modifier to control who should be able to create new instances of the class using this constructor.
+    // 생성자 규칙
+        - 1. 이름이 클래스 이름과 100% 똑같아야 됨.
+        - 2. 리턴 타입(Return Type)이 아예 없음
+               - 일반 메서드처럼 void, int, String 같은 걸 절대 적지 않음
+        - 3. new 할 때 자동으로 딱 한번 실행됨
+    ex)
+        public class Account { // This is the class declaration
+            public Account() { // This is the constructor declaration
+                // Constructor code is code to be executed as the object is created.
+            }
+        }
+
+/// The default constructor
+    If a class contains no constructor declaration then a default constructor is implicitly declared.
+    This constructor has no parameters and is often called the no-args(no arguments) constructor.
+    If a class contains any other constructor declarations, then a default constructor is NOT implicitly declared.
+
+
+
 
  */
 //// Constructors Part 2 : Overloading and Chaining ---------------------------------------------------
