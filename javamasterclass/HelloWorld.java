@@ -4391,11 +4391,36 @@ public class Car {
 
 //// Getters, Encapsulation, and Object Access ---------------------------------------------------
 /*
+/// What is null? // "변수가 선언은 되었지만, 실제로 메모리에 연결된 객체(실체)가 없다"
+    null is a special keyword in Java meaning the variable or attribute has a type but no reference to an object.
+    This means that no instance or object is assigned to the variable or field.
+    Fields with primitive data types are never null.
+
+/// Default values for fields on classes // 클래스 필드의 자동 기본값 (Default Values)
+    Fields on classes are assigned default values automatically by Java if you don't assign values yourself.
+        (Data type) - (Default value assigned)
+        boolean - false
+        byte, short, int, long, char - 0
+        double, float = 0.0
+
+/// What are getters and setters? Why should we use them? // private으로 숨겨둔 필드를 안전하게 읽고(Get) 변경(Set)하기 위해 만드는 메서드
+    A getter is a method on a class that retrieves the value of a private field and returns it.
+    A setter is a method on a class that sets the value of a private field.
+    The purpose of these methods is to control and protect access to private fields.
+ */
+//// Setters, Object Creation, and OOP Practice ---------------------------------------------------
+/*
+/// this
+    'this' is a special keyword in Java.
+    What it really refers to is the instance that was created when the object was instantiated.
+    So 'this' is a special reference name for the object or instance which it can use to describe itself.
+    And we can use 'this' to access fields on the class.
+    ex)
+        public void setMake(String make) {
+        this.make = make;
+    }
 
  */
-
-
-//// Setters, Object Creation, and OOP Practice ---------------------------------------------------
 //// Classes Challenge : Building a Bank Account ---------------------------------------------------
 //// Constructors Part 1 : Object Initialization ---------------------------------------------------
 //// Constructors Part 2 : Overloading and Chaining ---------------------------------------------------
