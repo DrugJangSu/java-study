@@ -4307,6 +4307,44 @@ public class Main {
 ///// Section 7 : Mastering Java OOP : Classes & Inheritance ----------------------------------------------------
 //// Deep Dive into Classes & Objects ---------------------------------------------------
 /*
+/// Object-Oriented Programming(OOP)
+    Object-Oriented Programming is a way to model real-world objects as software objects which contain both data and code.
+    OOP is a common acronym for Object-Oriented-Programming.
+
+/// Class-based Programming
+    Class based programming starts with classes which become the blueprints for objects.
+
+/// State and Behavior
+    Real-world objects have two major components: state and behavior.
+
+    /// State(computer)
+        State in terms of a computer object might be;
+            - The amount of Ram it has
+            - The operating system it's running
+            - The hard drive size
+            - The size of the monitor
+            - etc.
+    /// Behavior(computer)
+        Behavior or hactions that can be preformed by a computer object might be;
+            - Booting up
+            - Shutting down
+            - Beeping or outputting some form of sound
+            - Drawing something on the screen
+            - etc.
+
+    Modelling real world objects as software objects is a fundamental part of Object-Oriented Programming.
+    A software object stores its state in fields which can also be called variables or attributes.
+    Objects expose their behavior with methods.
+    Think of a class as a template or a blueprint for creating objects.
+
+/// The class as the blueprint
+    The class describes the data (fields) and the behavior(methods) that are relevant to the real-world object we want to describe.
+    These are called class members.
+    A class member can be a field or a method, or some other type of dependent element.
+    If a field is static there is only one copy in a memory, and this value is associated with the class or template itself.
+    If a field is not static it's called in instance field, and each object may have a different value stored for this field.
+    A static method can't be dependent on any one object's state, so it can't reference any instance members.
+    In other words any method that operates on isntance fields needs to be non-static.
 
 
 
