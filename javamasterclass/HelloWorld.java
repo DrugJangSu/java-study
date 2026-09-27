@@ -4613,11 +4613,136 @@ public class Main {
 //// Understanding References, Objects and Instances ---------------------------------------------------
 /*
 /// Reference vs Object vs Instance vs Class
+    Using the analogy of building a house to understand classes
+        - A class is basically a blueprint for the house.
+        - Using the blueprint we can build as many houses as we like based on those plans.
+        - Each house we build (in other words going back to programming terms, each house we instantiate using the new operator) is an object.
+        - This object can be also known as an instance. Often we'll say it's an instance of the class. So we would have an instance of house in this example.
+        - Getting back to the physical world each house we build has an address (It's built at a physical location.)
+        - In other words if we want to tell someone where we live, we give them our address(perhaps written on a piece of paper). This is known as a reference.
+        - We can copy that reference as many times as we like but there is still just one house that we're referring to.
+        - In other words we're copying the paper that has the address on it, not the house itself.
+        - We can poass references as parameters to constructors and methods.
+
+
+        ex)
+            public class House {
+                private String color;
+
+                public House(String color) {
+                    this.color = color;
+                }
+
+                public String getColor() {
+                    return color;
+                }
+
+                public void setColor(String color) {
+                    this.color = color;
+                }
+            }
+
+
+            public class Main {
+                public static void main(String[] args) {
+
+                    House blueHouse = new House("blue");
+                    House anotherHouse = blueHouse;
+
+                    System.out.println(blueHouse.getColor());
+                    System.out.println(anotherHouse.getColor());
+
+                    anotherHouse.setColor("red");
+                    System.out.println(blueHouse.getColor());
+                    System.out.println(anotherHouse.getColor());
+
+                    House greenHouse = new House("green");
+                    anotherHouse = greenHouse;
+
+                    System.out.println(blueHouse.getColor());
+                    System.out.println(greenHouse.getColor());
+                    System.out.println(anotherHouse.getColor());
+
+                }
+            }
+*/
+//// Static vs Instance Methods Explained ---------------------------------------------------
+/*
+/// Static Variables
+    Declared by using the keyword static.
+    Static variables are also known as static member variables.
+    Every instance of the class shares the same static variable.
+    if changes are made to that variable, all other instances of that class will see the effect of that change.
+    It is considered best practice to use the Class name and not a reference variable to access a static variable.
+    ex)
+    class Dog {
+        static String genus = "Canis";
+        void printData() {
+            Dog d = new Dog();
+            System.out.println(d.genus); // confusing.
+            System.out.println(Dog.genus); // better and clearer.
+            }
+    }
+    An instance isn't required to exist to access the value of a static variable.
+    Static variables aren't used very often but can sometimes be very useful.
+    They can be used for:
+    - Storing counters.
+    - Generating unique IDs.
+    - Storing a constant value that doesn't change, like PI for example.
+    - Creating and controlling access to a shared resource.
+
+
+/// Instance variables
+    They don't using the static keyword.
+    They're also known as fields or member variables.
+    Instance variables belong to a specific instance of a class.
+    Each instance has its own copy of an instance variable.
+    Every instance can have a different value.
+    Instance variables represent the state of a specific instance of a class.
+    ex)
+    class Dog {
+        private String name;
+        public Dog(String name) {
+            this.name = name;
+        }
+
+        public void printName() {
+            System.out.println("nane = " + name);
+        }
+    }
+    public class Main {
+        public static void main(String[] args) {
+            Dog rex = new Dog("rex");               // create instance (rex)
+            Dog fluffy = new Dog("fluffy");         // create instance (fluffy)
+            rex.printName();                        // prints rex
+            fluffy.printName();                     // prints fluffy
+        }
+    }
+
+ */
+//// POJOs : Plain Old Java Objects ---------------------------------------------------
+/*
+/// Static vs Instance Methods
+/// Static Methods
+    Static methods are declared using a static modifier.
+    Static methods can't access instance methods and instant variables directly.
+    They're usually used for operations that don't require any data from an instance of the class(from 'this').
+    The "this" keyword is the current instance of a class.
+    Inside a static method we can't use the this keyword.
+    Whenever you see a method that doesn't use instance variables, that method should probably be declared as a static method.
+    For example main is a static method and it's called by the java machine when it starts the java application.
+
+/// Instance Methods
+    Instance methods belong to an instance of a class.
+    To use an instance method, we have to instantiate the class first usually by using the new keyword.
+    Instance methods can access instance methods and instance variables directly.
+    Instance methods can also access static methods and static variables directly.
+
+
 
 
 */
-//// Static vs Instance Methods Explained ---------------------------------------------------
-//// POJOs : Plain Old Java Objects ---------------------------------------------------
+
 //// Java Records : The Modern POJO Approach ---------------------------------------------------
 //// Inheritance - Part 1 : The Basics ---------------------------------------------------
 //// Inheritance - Part 2 : Extending Animal Class ---------------------------------------------------
