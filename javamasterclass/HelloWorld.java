@@ -4738,12 +4738,32 @@ public class Main {
     Instance methods can access instance methods and instance variables directly.
     Instance methods can also access static methods and static variables directly.
 
+*/
+//// Java Records : The Modern POJO Approach ---------------------------------------------------
+/*
+/// Plain Old Java Object
+    A plain old Java object (whose acronym is POJO) is a class that generally only has instance fields.
+    It's used to house data and pass data between functional classes.
+    It usually has no other or very few methods other than getters and setters for the instance fields.
+    Many database frameworks use POJO's to read data from or to write data to databases, files or streams.
+
+/// Examples of POJOS
+    A POJO also might be called a bean or a JavaBean.
+    A JavaBean is just a POJO with some extra rules applied to it.
+    A POJO is sometimes called an Entity because it mirrors database entites.
+    Another acronym is DTO for Data Transfer Object.
+    It's a dsecription of an object that can be modeled as just data.
+
+
+/// Annotation
+    Annotation are a type of metadata.
+    Metadata is a way to formally describe additional information about our code.
+    Annotations are more structured and have more meaning than comments.
+    This is because they can be used by the complier or other types of pre-processing functions to get information about the code.
 
 
 
 */
-
-//// Java Records : The Modern POJO Approach ---------------------------------------------------
 //// Inheritance - Part 1 : The Basics ---------------------------------------------------
 //// Inheritance - Part 2 : Extending Animal Class ---------------------------------------------------
 //// Inheritance - Part 3 : Unique Dog & Fish Classes ---------------------------------------------------
